@@ -695,6 +695,7 @@ body.cursor-hover #cursor-ring { width: 50px; height: 50px; border-color: var(--
   justify-content: center;
   gap: var(--space-md);
   animation: heroFadeUp 1s var(--ease-out) 0.6s both;
+  margin-bottom: 10px;
 }
 .hero-social-link {
   display: flex;
