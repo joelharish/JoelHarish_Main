@@ -8,36 +8,32 @@ const PORTFOLIO = {
   personal: {
     name: "Joel Harish",
     role: "Software Engineer",
-    roleAlt: "Open Source Contributor",
     tagline: "Building elegant solutions to complex problems",
     bio: "I'm a passionate Software Engineer who loves crafting clean, efficient code and building products that make a real difference. With expertise spanning frontend and backend technologies, I thrive at the intersection of creativity and logic.",
-    bio2: "When I'm not coding, you'll find me exploring open source projects, contributing to the community, and diving into new technologies. I believe great software is built by curious minds who never stop learning.",
-    email: "joelharish@example.com",
+    bio2: "I believe great software is built by curious minds who never stop learning.",
+    email: "joelharish325@gmail.com",
     github: "joelharish",
     linkedin: "joelharish",
-    twitter: "joelharish",
-    location: "India 🇮🇳",
+    location: "Sri Lanka",
     resumeUrl: "#",
     avatar: null,
     typewriterRoles: [
       "Software Engineer",
-      "Open Source Contributor",
       "Full-Stack Developer",
       "Problem Solver",
       "Code Craftsman"
     ],
     chips: [
-      { label: "Coffee Addict ☕", color: "#c8872a" },
+      { label: "Tea Addict ☕", color: "#c8872a" },
       { label: "Night Owl 🦉", color: "#7c3aed" },
-      { label: "Open Source Lover 🔓", color: "#059669" },
+      { label: "Guitarist 🔓", color: "#059669" },
       { label: "Problem Solver 🧩", color: "#2563eb" },
       { label: "Team Player 🤝", color: "#db2777" }
     ],
     facts: [
-      { icon: "💼", label: "Years Experience", value: 3, suffix: "+" },
+      { icon: "💼", label: "Months Of Experience", value: 7, suffix: "+" },
       { icon: "🚀", label: "Projects Built",   value: 20, suffix: "+" },
-      { icon: "⭐", label: "GitHub Stars",      value: 193, suffix: "" },
-      { icon: "☕", label: "Cups of Coffee",   value: 2847, suffix: "" }
+      { icon: "☕", label: "Cups of Tea",   value: 2847, suffix: "+" }
     ]
   },
 
@@ -46,24 +42,24 @@ const PORTFOLIO = {
     Frontend: [
       { name: "HTML5",      icon: "devicon-html5-plain colored",      level: 95 },
       { name: "CSS3",       icon: "devicon-css3-plain colored",       level: 90 },
-      { name: "JavaScript", icon: "devicon-javascript-plain colored", level: 88 },
-      { name: "React",      icon: "devicon-react-original colored",   level: 82 },
-      { name: "Angular",    icon: "devicon-angularjs-plain colored",  level: 75 },
-      { name: "TypeScript", icon: "devicon-typescript-plain colored", level: 68 }
+      { name: "JavaScript", icon: "devicon-javascript-plain colored", level: 75 },
+      { name: "React",      icon: "devicon-react-original colored",   level: 70 },
+      { name: "Angular",    icon: "devicon-angularjs-plain colored",  level: 65 },
+      { name: "TypeScript", icon: "devicon-typescript-plain colored", level: 58 }
     ],
     Backend: [
       { name: "C#",      icon: "devicon-csharp-plain colored",      level: 85 },
       { name: ".NET",    icon: "devicon-dotnetcore-plain colored",   level: 82 },
-      { name: "Java",    icon: "devicon-java-plain colored",         level: 78 },
-      { name: "Python",  icon: "devicon-python-plain colored",       level: 75 },
+      { name: "Java",    icon: "devicon-java-plain colored",         level: 60 },
+      { name: "Python",  icon: "devicon-python-plain colored",       level: 65 },
       { name: "PHP",     icon: "devicon-php-plain colored",          level: 70 },
-      { name: "Node.js", icon: "devicon-nodejs-plain colored",       level: 62 }
+      { name: "Node.js", icon: "devicon-nodejs-plain colored",       level: 45 }
     ],
     Database: [
       { name: "SQL Server",  icon: "devicon-microsoftsqlserver-plain colored", level: 85 },
       { name: "MySQL",       icon: "devicon-mysql-plain colored",               level: 80 },
-      { name: "PostgreSQL",  icon: "devicon-postgresql-plain colored",          level: 72 },
-      { name: "MongoDB",     icon: "devicon-mongodb-plain colored",             level: 64 }
+      // { name: "PostgreSQL",  icon: "devicon-postgresql-plain colored",          level: 72 },
+      // { name: "MongoDB",     icon: "devicon-mongodb-plain colored",             level: 64 }
     ],
     Tools: [
       { name: "Git",    icon: "devicon-git-plain colored",     level: 90 },
@@ -71,7 +67,8 @@ const PORTFOLIO = {
       { name: "VS Code",icon: "devicon-vscode-plain colored",  level: 94 },
       { name: "C",      icon: "devicon-c-plain colored",       level: 72 },
       { name: "Linux",  icon: "devicon-linux-plain",           level: 68 },
-      { name: "Docker", icon: "devicon-docker-plain colored",  level: 54 }
+      { name: "AI & Agent",  icon: "devicon-godot-plain",           level: 75 }
+      // { name: "Docker", icon: "devicon-docker-plain colored",  level: 54 }
     ]
   },
 
@@ -512,68 +509,35 @@ function* mergeGen(arr, lo, mid, hi) {
   timeline: [
     {
       year: "2019",
-      title: "First Line of Code",
-      description: "Wrote my very first Hello World in C and was instantly hooked. Started exploring HTML and CSS to build basic web pages.",
+      title: "O/Ls",
+      description: "Completed my O/Ls with average results.",
       icon: "🌱",
       category: "Education",
-      tags: ["C", "HTML", "CSS"]
-    },
-    {
-      year: "2020",
-      title: "Built My First Website",
-      description: "Created a fully interactive school project website from scratch. Discovered JavaScript and the magic of making things move on screen.",
-      icon: "🌐",
-      category: "Project",
-      tags: ["HTML", "CSS", "JavaScript"]
-    },
-    {
-      year: "2021",
-      title: "Started CS Degree",
-      description: "Enrolled in a Computer Science program. Deep-dived into Data Structures, Algorithms, OOP with Java, and Operating Systems.",
-      icon: "🎓",
-      category: "Education",
-      tags: ["Java", "DSA", "OOP", "C", "OS"]
+      tags: ["Maths", "Science", "English"]
     },
     {
       year: "2022",
-      title: "First Internship",
-      description: "Joined a tech startup as a Junior Full-Stack Developer intern. Learned professional Git workflows, code review culture, and agile sprints.",
-      icon: "💼",
-      category: "Work",
-      tags: ["React", "Node.js", "SQL", "Git", "Agile"]
-    },
-    {
-      year: "2023",
-      title: "Open Source & Certifications",
-      description: "Made my first meaningful open source contributions. Earned SQL and Java certifications. Built AlgoViz which gained 89 GitHub stars.",
-      icon: "🔓",
-      category: "Achievement",
-      tags: ["Open Source", "Python", "SQL", "Java"]
+      title: "A/Ls",
+      description: "Completed my A/Ls with good results.",
+      icon: "�",
+      category: "Education",
+      tags: ["E-Tech", "SFT", "ICT"]
     },
     {
       year: "2024",
-      title: "Full-Stack Mastery",
-      description: "Built SkyPulse, DataLens, and LinkUp. Earned Meta Front-End and Google Analytics certifications. Expanded into .NET, Angular, and Python.",
-      icon: "🚀",
-      category: "Project",
-      tags: ["Angular", ".NET", "Python", "React", "Django"]
+      title: "Started BIT Degree",
+      description: "Enrolled in a BIT Degree program. Deep-dived into Data Structures, Algorithms, OOP with Java, and Operating Systems and Software Engineering.",
+      icon: "🎓",
+      category: "Education",
+      tags: ["Java", "DSA", "OOP", "C", "OS", "Software Engineering", "Maths"]
     },
     {
       year: "2025",
-      title: "Cloud Certified",
-      description: "Earned AWS Cloud Practitioner and Azure AZ-900 certifications. Built TaskFlow and ShopSphere as production-grade applications.",
-      icon: "☁️",
-      category: "Achievement",
-      tags: ["AWS", "Azure", "C#", "SignalR", "Docker"]
-    },
-    {
-      year: "2026",
-      title: "Software Engineer",
-      description: "Currently growing as a Software Engineer — contributing to open source, mentoring juniors, and building ambitious side projects.",
-      icon: "⚡",
+      title: "First Internship",
+      description: "Joined a tech startup as a Software Engineer intern. Learned professional workflows, code review culture, and Banking development practices.",
+      icon: "💼",
       category: "Work",
-      tags: ["Leadership", "Architecture", "Mentoring"],
-      current: true
+      tags: [".NET", "C#", "SQL", "TFS", "Pawning"]
     }
   ],
 
@@ -581,7 +545,7 @@ function* mergeGen(arr, lo, mid, hi) {
   achievements: [
     { id: "explorer",      icon: "🗺️",  title: "Explorer",       desc: "Visited 5 different sections",         secret: false },
     { id: "code_reader",   icon: "📖",  title: "Code Reader",    desc: "Opened the VS Code Explorer",          secret: false },
-    { id: "cert_hunter",   icon: "🏅",  title: "Cert Hunter",    desc: "Browsed the Certificates Vault",       secret: false },
+    { id: "cert_hunter",   icon: "🏅",  title: "Certificate Hunter",    desc: "Browsed the Certificates Vault",       secret: false },
     { id: "github_stalker",icon: "🐙",  title: "GitHub Stalker", desc: "Checked out the GitHub Stats",         secret: false },
     { id: "time_traveler", icon: "⏱️",  title: "Time Traveler",  desc: "Explored the Learning Journey",        secret: false },
     { id: "recruiter",     icon: "💼",  title: "Recruiter Mode", desc: "Activated Recruiter Mode",             secret: false },
