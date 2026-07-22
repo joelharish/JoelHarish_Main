@@ -239,13 +239,8 @@ function initProjects() {
         <p class="project-desc">${p.description}</p>
         <div class="project-tags">${tagsHtml}</div>
         <div class="project-footer">
-          <div class="project-stats">
-            <span><i class="far fa-star"></i> ${p.stars}</span>
-            <span><i class="fas fa-code-branch"></i> ${p.forks}</span>
-          </div>
           <div class="project-links">
             ${p.github !== '#' ? `<a href="${p.github}" target="_blank" rel="noopener" class="project-link" aria-label="GitHub Repo" onclick="event.stopPropagation()"><i class="fab fa-github"></i></a>` : ''}
-            ${p.demo !== '#' ? `<a href="${p.demo}" target="_blank" rel="noopener" class="project-link" aria-label="Live Demo" onclick="event.stopPropagation()"><i class="fas fa-external-link-alt"></i></a>` : ''}
           </div>
         </div>
       </div>
@@ -303,8 +298,7 @@ window.openProjectModal = function(id) {
 
   // Links
   let linksHtml = '';
-  if (p.github !== '#') linksHtml += `<a href="${p.github}" target="_blank" class="btn btn-ghost btn-sm"><i class="fab fa-github"></i> Source Code</a>`;
-  if (p.demo !== '#') linksHtml += `<a href="${p.demo}" target="_blank" class="btn btn-primary btn-sm"><i class="fas fa-external-link-alt"></i> Live Demo</a>`;
+  if (p.github !== '#') linksHtml += `<a href="${p.github}" target="_blank" class="btn btn-primary btn-sm"><i class="fab fa-github"></i> Source Code</a>`;
   document.getElementById('pm-links').innerHTML = linksHtml;
 
   const overlay = document.getElementById('project-modal');
@@ -379,9 +373,7 @@ function initCertificates() {
           <a href="${c.verifyUrl}" target="_blank" rel="noopener" class="cert-btn primary" style="--cert-color:${c.color}">
             <i class="fas fa-certificate"></i> Verify
           </a>
-          <a href="javascript:void(0)" class="cert-btn" download="${c.credentialId}.pdf">
-            <i class="fas fa-download"></i> PDF
-          </a>
+          
         </div>
       `;
       grid.appendChild(card);

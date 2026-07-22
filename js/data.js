@@ -8,36 +8,32 @@ const PORTFOLIO = {
   personal: {
     name: "Joel Harish",
     role: "Software Engineer",
-    roleAlt: "Open Source Contributor",
     tagline: "Building elegant solutions to complex problems",
     bio: "I'm a passionate Software Engineer who loves crafting clean, efficient code and building products that make a real difference. With expertise spanning frontend and backend technologies, I thrive at the intersection of creativity and logic.",
-    bio2: "When I'm not coding, you'll find me exploring open source projects, contributing to the community, and diving into new technologies. I believe great software is built by curious minds who never stop learning.",
-    email: "joelharish@example.com",
+    bio2: "I believe great software is built by curious minds who never stop learning.",
+    email: "joelharish325@gmail.com",
     github: "joelharish",
-    linkedin: "joelharish",
-    twitter: "joelharish",
-    location: "India 🇮🇳",
+    linkedin: "joel-harish",
+    location: "Sri Lanka",
     resumeUrl: "#",
     avatar: null,
     typewriterRoles: [
       "Software Engineer",
-      "Open Source Contributor",
       "Full-Stack Developer",
       "Problem Solver",
       "Code Craftsman"
     ],
     chips: [
-      { label: "Coffee Addict ☕", color: "#c8872a" },
+      { label: "Tea Addict ☕", color: "#c8872a" },
       { label: "Night Owl 🦉", color: "#7c3aed" },
-      { label: "Open Source Lover 🔓", color: "#059669" },
+      { label: "Guitarist 🔓", color: "#059669" },
       { label: "Problem Solver 🧩", color: "#2563eb" },
       { label: "Team Player 🤝", color: "#db2777" }
     ],
     facts: [
-      { icon: "💼", label: "Years Experience", value: 3, suffix: "+" },
+      { icon: "💼", label: "Months Of Experience", value: 7, suffix: "+" },
       { icon: "🚀", label: "Projects Built",   value: 20, suffix: "+" },
-      { icon: "⭐", label: "GitHub Stars",      value: 193, suffix: "" },
-      { icon: "☕", label: "Cups of Coffee",   value: 2847, suffix: "" }
+      { icon: "☕", label: "Cups of Tea",   value: 2847, suffix: "+" }
     ]
   },
 
@@ -46,24 +42,24 @@ const PORTFOLIO = {
     Frontend: [
       { name: "HTML5",      icon: "devicon-html5-plain colored",      level: 95 },
       { name: "CSS3",       icon: "devicon-css3-plain colored",       level: 90 },
-      { name: "JavaScript", icon: "devicon-javascript-plain colored", level: 88 },
-      { name: "React",      icon: "devicon-react-original colored",   level: 82 },
-      { name: "Angular",    icon: "devicon-angularjs-plain colored",  level: 75 },
-      { name: "TypeScript", icon: "devicon-typescript-plain colored", level: 68 }
+      { name: "JavaScript", icon: "devicon-javascript-plain colored", level: 75 },
+      { name: "React",      icon: "devicon-react-original colored",   level: 70 },
+      { name: "Angular",    icon: "devicon-angularjs-plain colored",  level: 65 },
+      { name: "TypeScript", icon: "devicon-typescript-plain colored", level: 58 }
     ],
     Backend: [
       { name: "C#",      icon: "devicon-csharp-plain colored",      level: 85 },
       { name: ".NET",    icon: "devicon-dotnetcore-plain colored",   level: 82 },
-      { name: "Java",    icon: "devicon-java-plain colored",         level: 78 },
-      { name: "Python",  icon: "devicon-python-plain colored",       level: 75 },
+      { name: "Java",    icon: "devicon-java-plain colored",         level: 60 },
+      { name: "Python",  icon: "devicon-python-plain colored",       level: 65 },
       { name: "PHP",     icon: "devicon-php-plain colored",          level: 70 },
-      { name: "Node.js", icon: "devicon-nodejs-plain colored",       level: 62 }
+      { name: "Node.js", icon: "devicon-nodejs-plain colored",       level: 45 }
     ],
     Database: [
       { name: "SQL Server",  icon: "devicon-microsoftsqlserver-plain colored", level: 85 },
       { name: "MySQL",       icon: "devicon-mysql-plain colored",               level: 80 },
-      { name: "PostgreSQL",  icon: "devicon-postgresql-plain colored",          level: 72 },
-      { name: "MongoDB",     icon: "devicon-mongodb-plain colored",             level: 64 }
+      // { name: "PostgreSQL",  icon: "devicon-postgresql-plain colored",          level: 72 },
+      // { name: "MongoDB",     icon: "devicon-mongodb-plain colored",             level: 64 }
     ],
     Tools: [
       { name: "Git",    icon: "devicon-git-plain colored",     level: 90 },
@@ -71,7 +67,8 @@ const PORTFOLIO = {
       { name: "VS Code",icon: "devicon-vscode-plain colored",  level: 94 },
       { name: "C",      icon: "devicon-c-plain colored",       level: 72 },
       { name: "Linux",  icon: "devicon-linux-plain",           level: 68 },
-      { name: "Docker", icon: "devicon-docker-plain colored",  level: 54 }
+      { name: "AI & Agent",  icon: "devicon-godot-plain",           level: 75 }
+      // { name: "Docker", icon: "devicon-docker-plain colored",  level: 54 }
     ]
   },
 
@@ -79,318 +76,302 @@ const PORTFOLIO = {
   projects: [
     {
       id: 1,
-      title: "ShopSphere",
-      subtitle: "Full-Stack E-Commerce Platform",
-      description: "A production-ready e-commerce platform with real-time inventory, Stripe payments, and a comprehensive admin dashboard.",
-      longDescription: "ShopSphere is a full-featured e-commerce solution designed to handle thousands of concurrent users. It features a dynamic product catalog, real-time stock updates via WebSockets, Stripe payment integration with webhook handling, order tracking, customer reviews, and a data-rich admin panel with analytics charts.",
-      tags: ["React", "Node.js", "MongoDB", "Stripe", "Redis"],
-      category: "fullstack",
+      title: "HantaRiskModel",
+      subtitle: "Machine Learning Prediction App",
+      description: "A machine learning based application designed to predict and analyze Hantavirus risk factors using python ML libraries.",
+      longDescription: "HantaRiskModel leverages Python and machine learning algorithms to model and predict the risk of Hantavirus outbreaks and infection vectors. By analyzing environmental, demographic, and biological dataset features, the model classifies risk levels to help health authorities take preventive actions.",
+      tags: ["Python", "Machine Learning", "Scikit-Learn", "Pandas", "Data Science"],
+      category: "backend",
       featured: true,
-      github: "https://github.com/joelharish/shopsphere",
+      github: "https://github.com/joelharish/HantaRiskModel",
       demo: "#",
-      stars: 42,
-      forks: 12,
-      color: "#2563eb",
-      emoji: "🛒",
-      architecture: "Microservices architecture — React frontend, Node.js/Express API gateway, MongoDB for products/orders, Redis for session caching, Stripe for payments.",
+      stars: 0,
+      forks: 0,
+      color: "#e11d48",
+      emoji: "🦠",
+      architecture: "Python data science stack utilizing Pandas/Numpy for preprocessing, Scikit-Learn for training classification/regression models, and Jupyter Notebooks for analysis.",
       challenges: [
-        "Real-time inventory sync across multiple concurrent sessions",
-        "Optimizing image loading pipeline for 10,000+ product catalogue",
-        "Implementing idempotent payment flows to prevent double charges"
+        "Handling class imbalance in epidemiological datasets",
+        "Selecting the most predictive environmental and clinical risk factors",
+        "Evaluating model metrics like sensitivity and specificity for medical applications"
       ],
       lessons: [
-        "Redis caching reduced average API response time by 70%",
-        "Optimistic UI updates make checkout feel instantaneous",
-        "Webhook validation is non-negotiable in payment systems"
+        "Random Forest classifier achieved the highest accuracy of 89% on test data",
+        "Data cleaning and scaling accounted for 70% of development time",
+        "Feature importance analysis revealed temperature and rodent density were the strongest predictors"
       ],
       codeSnippet: {
-        lang: "javascript",
-        code: `// Product search with fuzzy matching & filters
-const searchProducts = async (query, filters) => {
-  const pipeline = [
-    {
-      $search: {
-        index: 'products',
-        text: { query, path: ['name', 'description'] }
-      }
-    },
-    { $match: buildFilterQuery(filters) },
-    { $addFields: { score: { $meta: 'searchScore' } } },
-    { $sort: { score: -1, stock: -1 } },
-    { $limit: 50 }
-  ];
-  return Product.aggregate(pipeline);
-};`
+        lang: "python",
+        code: `# Train Random Forest Classifier
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import classification_report
+
+# Split data
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Initialize and train model
+rf_model = RandomForestClassifier(n_estimators=100, random_state=42)
+rf_model.fit(X_train, y_train)
+
+# Evaluate model
+predictions = rf_model.predict(X_test)
+print(classification_report(y_test, predictions))`
       }
     },
     {
       id: 2,
-      title: "TaskFlow",
-      subtitle: "Agile Project Management Tool",
-      description: "Jira-inspired project management with drag-and-drop Kanban boards, sprint planning, and real-time collaboration via SignalR.",
-      longDescription: "TaskFlow brings powerful agile tooling to small teams. Built with Angular and .NET 8, it features Kanban & Scrum boards, sprint planning with burndown charts, time tracking, role-based access control, and instant real-time updates using SignalR WebSockets.",
-      tags: ["Angular", "C#", ".NET", "SQL Server", "SignalR"],
+      title: "Employee Management System",
+      subtitle: "HR & Attendance System",
+      description: "A PHP & MySQL based Employee Management System featuring attendance tracking, role-based access, and automated salary calculation.",
+      longDescription: "ITSignature Employee Management System is a robust web platform designed for small-to-medium enterprises. It facilitates seamless HR processes, allowing administrators to manage employee records, track daily attendance, enforce role-based access control, and automatically generate monthly salary details.",
+      tags: ["PHP", "MySQL", "HTML5", "CSS3", "JavaScript"],
       category: "fullstack",
-      featured: false,
-      github: "https://github.com/joelharish/taskflow",
-      demo: "#",
-      stars: 28,
-      forks: 8,
-      color: "#7c3aed",
-      emoji: "📋",
-      architecture: "Angular SPA + .NET 8 Web API + SQL Server + SignalR hub for real-time collaboration + JWT authentication with refresh tokens.",
-      challenges: [
-        "Implementing drag-and-drop with instant sync across all connected clients",
-        "Complex SQL window functions for burndown chart calculations",
-        "Fine-grained role & permission system at the board and task level"
-      ],
-      lessons: [
-        "SignalR dramatically simplifies real-time feature development",
-        ".NET 8 minimal APIs have significantly lower overhead",
-        "Investing in good database indexing pays off exponentially"
-      ],
-      codeSnippet: {
-        lang: "csharp",
-        code: `[HubAuthorize]
-public class BoardHub : Hub
-{
-    private readonly ITaskService _taskService;
-
-    public BoardHub(ITaskService taskService)
-        => _taskService = taskService;
-
-    public async Task MoveTask(int taskId, string newStatus)
-    {
-        var task = await _taskService
-            .MoveAsync(taskId, newStatus, Context.UserIdentifier);
-
-        await Clients.Group(task.BoardId.ToString())
-            .SendAsync("TaskMoved", task);
-    }
-
-    public override async Task OnConnectedAsync()
-    {
-        var boardId = Context.GetHttpContext()?.Request.Query["board"];
-        if (boardId.HasValue) await Groups.AddToGroupAsync(
-            Context.ConnectionId, boardId.Value!);
-        await base.OnConnectedAsync();
-    }
-}`
-      }
-    },
-    {
-      id: 3,
-      title: "SkyPulse",
-      subtitle: "Real-Time Weather Dashboard",
-      description: "Beautiful weather app with auto-location detection, 7-day forecast, air quality index, UV index, and interactive Leaflet maps.",
-      longDescription: "SkyPulse delivers pixel-perfect weather data from the OpenWeatherMap API. It features animated weather icons that change throughout the day, precipitation probability charts, wind speed compass, a 48-hour hourly timeline, and an interactive map to explore weather anywhere on Earth.",
-      tags: ["JavaScript", "HTML5", "CSS3", "OpenWeather API", "Leaflet.js"],
-      category: "frontend",
       featured: true,
-      github: "https://github.com/joelharish/skypulse",
+      github: "https://github.com/joelharish/ITSignature_Employee_Managment_System",
       demo: "#",
-      stars: 67,
-      forks: 19,
-      color: "#0891b2",
-      emoji: "🌤️",
-      architecture: "Pure frontend SPA. Geolocation API → OpenWeatherMap REST API → Leaflet.js map. Service worker for offline caching of last-known weather.",
-      challenges: [
-        "Handling geolocation permission denial gracefully with city search fallback",
-        "Animating weather state transitions without jarring flashes",
-        "Consistent responsive layout from 320px mobile to 4K displays"
-      ],
-      lessons: [
-        "Service workers enable genuinely useful offline experiences",
-        "CSS animations can completely replace heavy JS animation libraries",
-        "Thoughtful error states are just as important as the happy path"
-      ],
-      codeSnippet: {
-        lang: "javascript",
-        code: `// Auto-detect location → fetch weather in parallel
-const initWeather = async () => {
-  try {
-    const pos = await new Promise((resolve, reject) =>
-      navigator.geolocation.getCurrentPosition(resolve, reject, {
-        timeout: 8000,
-        maximumAge: 300_000
-      })
-    );
-    const { latitude: lat, longitude: lon } = pos.coords;
-
-    const [weather, forecast, airQuality] = await Promise.all([
-      fetchWeather(lat, lon),
-      fetchForecast(lat, lon),
-      fetchAirQuality(lat, lon)
-    ]);
-
-    renderDashboard(weather, forecast, airQuality);
-  } catch {
-    // Fallback to IP-based location
-    const ipGeo = await fetchIPLocation();
-    await initWeatherByCity(ipGeo.city);
-  }
-};`
-      }
-    },
-    {
-      id: 4,
-      title: "DataLens",
-      subtitle: "Social Media Analytics Platform",
-      description: "Python-powered analytics dashboard with NLP sentiment analysis, trend detection, and beautiful Chart.js visualizations.",
-      longDescription: "DataLens aggregates metrics from multiple social platforms, runs NLTK-powered sentiment analysis on content, detects trending topics using TF-IDF, and presents everything in an interactive React dashboard. Celery workers handle background data ingestion.",
-      tags: ["Python", "Django", "Chart.js", "NLTK", "PostgreSQL"],
-      category: "backend",
-      featured: false,
-      github: "https://github.com/joelharish/datalens",
-      demo: "#",
-      stars: 35,
-      forks: 11,
+      stars: 0,
+      forks: 0,
       color: "#059669",
-      emoji: "📊",
-      architecture: "Django REST Framework API + Celery + Redis queue + PostgreSQL + NLTK NLP pipeline + React dashboard with Chart.js visualizations.",
+      emoji: "👥",
+      architecture: "Traditional LAMP/WAMP architecture. PHP server-side scripting, MySQL relational database for structured employee data, and vanilla CSS/JS for frontend interface.",
       challenges: [
-        "Efficiently processing and storing large volumes of social media data",
-        "Improving sentiment analysis accuracy for domain-specific language",
-        "Keeping dashboard charts live without hammering the database"
+        "Calculating dynamic salaries factoring in unpaid leaves and overtime hours",
+        "Preventing unauthorized page access through robust session management",
+        "Optimizing SQL queries to fetch attendance logs efficiently"
       ],
       lessons: [
-        "Celery transforms Django into a powerful async processing system",
-        "Data pipeline architecture matters as much as the algorithm itself",
-        "Caching pre-aggregated analytics saves enormous server resources"
-      ],
-      codeSnippet: {
-        lang: "python",
-        code: `class SentimentPipeline:
-    """Batch sentiment analysis with caching."""
-
-    def __init__(self):
-        self.vader = SentimentIntensityAnalyzer()
-        self._cache: dict[str, dict] = {}
-
-    def analyze_batch(self, texts: list[str]) -> list[dict]:
-        results = []
-        for text in texts:
-            key = hashlib.md5(text.encode()).hexdigest()
-            if key not in self._cache:
-                scores = self.vader.polarity_scores(text)
-                self._cache[key] = {
-                    **scores,
-                    "label": self._label(scores["compound"]),
-                    "confidence": abs(scores["compound"])
-                }
-            results.append(self._cache[key])
-        return results
-
-    @staticmethod
-    def _label(compound: float) -> str:
-        if compound >  0.05: return "positive"
-        if compound < -0.05: return "negative"
-        return "neutral"`
-      }
-    },
-    {
-      id: 5,
-      title: "LinkUp",
-      subtitle: "Real-Time Chat Application",
-      description: "Slack-inspired messaging app with channels, DMs, file sharing, emoji reactions, and live presence indicators.",
-      longDescription: "LinkUp is a full-featured chat platform built with PHP WebSockets and MySQL. It supports public/private channels, direct messaging, rich file uploads with previews, threaded replies, emoji reactions, and real-time typing/online indicators.",
-      tags: ["PHP", "WebSockets", "MySQL", "JavaScript", "Bootstrap"],
-      category: "fullstack",
-      featured: false,
-      github: "https://github.com/joelharish/linkup",
-      demo: "#",
-      stars: 21,
-      forks: 7,
-      color: "#db2777",
-      emoji: "💬",
-      architecture: "PHP Ratchet WebSocket server + MySQL for message persistence + vanilla JS client with Bootstrap UI + Nginx reverse proxy.",
-      challenges: [
-        "Scaling WebSocket connections efficiently within PHP constraints",
-        "Guaranteeing message delivery order under concurrent writes",
-        "Implementing efficient file upload pipeline with virus scanning"
-      ],
-      lessons: [
-        "WebSockets in PHP are more capable than most developers expect",
-        "Message queuing prevents data loss under load",
-        "UX micro-details (typing indicators, read receipts) define great chat apps"
+        "Prepared SQL statements are critical to preventing SQL injection attacks",
+        "Normalized database design dramatically simplified salary calculations",
+        "Providing CSV export features greatly improved HR department productivity"
       ],
       codeSnippet: {
         lang: "php",
         code: `<?php
-class ChatServer implements MessageComponentInterface
-{
-    private SplObjectStorage $clients;
-    private array $rooms = [];
+// Verify user role and login session
+session_start();
+if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
+    header("Location: login.php");
+    exit();
+}
 
-    public function onMessage(ConnectionInterface $from, $msg): void
+// Fetch employee details securely using prepared statement
+$stmt = $conn->prepare("SELECT * FROM employees WHERE id = ?");
+$stmt->bind_param("i", $employee_id);
+$stmt->execute();
+$result = $stmt->get_result();
+$employee = $result->fetch_assoc();`
+      }
+    },
     {
-        $data = json_decode($msg, true);
-        $room = $this->rooms[$data['room_id']] ?? null;
-        if (!$room) return;
+      id: 3,
+      title: "Book Management System",
+      subtitle: "Full-Stack Web Application",
+      description: "A clean ASP.NET Core & SQL Server web application that allows users to perform CRUD operations on a book collection with search and filter features.",
+      longDescription: "Book Management System is a full-stack library catalog web application. Built with ASP.NET Core MVC and SQL Server, it provides a clean, responsive user interface to manage book inventories. It features real-time search, filters by genre and author, pagination, validation checks, and database seeding.",
+      tags: ["C#", "ASP.NET Core", "SQL Server", "Entity Framework", "Bootstrap"],
+      category: "fullstack",
+      featured: true,
+      github: "https://github.com/joelharish/Book_Management_System",
+      demo: "#",
+      stars: 0,
+      forks: 0,
+      color: "#7c3aed",
+      emoji: "📚",
+      architecture: "ASP.NET Core MVC architecture with Entity Framework Core as the Object-Relational Mapper (ORM), SQL Server database, and Razor Views for the presentation layer.",
+      challenges: [
+        "Implementing server-side sorting, pagination, and multi-parameter filtering concurrently",
+        "Ensuring database data integrity when deleting books linked to orders or reviews",
+        "Creating clean frontend form validations with Razor model binding"
+      ],
+      lessons: [
+        "Entity Framework migrations make database schema changes extremely manageable",
+        "Repository pattern decouples the database logic from the controller layer",
+        "Client-side jQuery validation improves the user experience by reducing server trips"
+      ],
+      codeSnippet: {
+        lang: "csharp",
+        code: `// Get books with filtering, searching, and pagination
+public async Task<IActionResult> Index(string searchString, string genre, int? pageNumber)
+{
+    var books = from b in _context.Books select b;
 
-        $saved = $this->persistMessage($from->userId, $data);
-
-        foreach ($room as $client) {
-            // Echo to everyone, including sender for confirmation
-            $client->send(json_encode([
-                'type'    => 'message',
-                'payload' => $saved,
-                'ack'     => $client === $from
-            ]));
-        }
+    if (!string.IsNullOrEmpty(searchString))
+    {
+        books = books.Where(s => s.Title.Contains(searchString) || s.Author.Contains(searchString));
     }
+
+    if (!string.IsNullOrEmpty(genre))
+    {
+        books = books.Where(x => x.Genre == genre);
+    }
+
+    int pageSize = 10;
+    return View(await PaginatedList<Book>.CreateAsync(books.AsNoTracking(), pageNumber ?? 1, pageSize));
+}`
+      }
+    },
+    {
+      id: 4,
+      title: "AI Animal Analyzer",
+      subtitle: "AI-Powered Image Recognition",
+      description: "An application that utilizes advanced AI to recognize, analyze, and describe various animal species from uploaded images.",
+      longDescription: "AI Animal Analyzer is a web utility that leverages Artificial Intelligence and Computer Vision models to analyze images of animals. Users upload an image, and the system instantly identifies the animal, detects its breed or species, and provides educational information about its habitat, diet, and behavior.",
+      tags: ["JavaScript", "React", "AI API", "Tailwind CSS", "Vercel"],
+      category: "frontend",
+      featured: false,
+      github: "https://github.com/joelharish/ai-animal-analyzer",
+      demo: "https://ai-animal-analyzer.vercel.app",
+      stars: 0,
+      forks: 0,
+      color: "#0ea5e9",
+      emoji: "🦁",
+      architecture: "React client communicating with an AI Model Inference API hosted serverlessly, deployed on Vercel with responsive Tailwind CSS interface.",
+      challenges: [
+        "Handling large image uploads efficiently over mobile networks",
+        "Parsing complex API JSON responses to extract high-confidence species tags",
+        "Designing a simple, drag-and-drop UI that functions well on all device sizes"
+      ],
+      lessons: [
+        "Client-side image compression before upload saves significant bandwidth",
+        "Caching AI results locally reduces API usage costs for duplicate requests",
+        "Deploying to Vercel provides seamless Serverless Function integration"
+      ],
+      codeSnippet: {
+        lang: "javascript",
+        code: `// Send base64 image data to the AI API
+const analyzeAnimalImage = async (base64Image) => {
+  const response = await fetch('/api/analyze', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ image: base64Image })
+  });
+  
+  if (!response.ok) throw new Error('AI analysis failed');
+  const data = await response.json();
+  return {
+    species: data.predictions[0].label,
+    confidence: data.predictions[0].score,
+    facts: data.additional_details
+  };
+};`
+      }
+    },
+    {
+      id: 5,
+      title: "Bank System",
+      subtitle: "Console Banking Application",
+      description: "A terminal-based banking application built in Dart implementing key object-oriented programming concepts for managing bank accounts.",
+      longDescription: "Bank System is a Dart console application that models bank operations. It allows creation of savings and current accounts, deposit/withdrawal transactions with validation checks, balance inquiries, interest calculations, and transaction history tracking, strictly adhering to clean OOP principles.",
+      tags: ["Dart", "OOPs", "Console", "Software Design"],
+      category: "backend",
+      featured: false,
+      github: "https://github.com/joelharish/BankSystem",
+      demo: "#",
+      stars: 0,
+      forks: 0,
+      color: "#f59e0b",
+      emoji: "🏦",
+      architecture: "Console application utilizing object-oriented Dart design patterns including inheritance, encapsulation, polymorphism, and abstraction.",
+      challenges: [
+        "Enforcing transactional safety (ensuring withdrawals don't exceed account limits)",
+        "Designing a robust interactive menu system that handles invalid user input gracefully",
+        "Managing persistent state in memory throughout the runtime of the session"
+      ],
+      lessons: [
+        "Encapsulation is vital to prevent direct, unauthorized modification of account balances",
+        "Dart's strong type system catches potential bugs at compile time",
+        "Interactive CLI testing helps visualize program execution flow clearly"
+      ],
+      codeSnippet: {
+        lang: "javascript",
+        code: `class BankAccount {
+  final String accountNumber;
+  final String ownerName;
+  double _balance = 0.0;
+
+  BankAccount(this.accountNumber, this.ownerName, double initialBalance) {
+    if (initialBalance >= 0) _balance = initialBalance;
+  }
+
+  double get balance => _balance;
+
+  void deposit(double amount) {
+    if (amount > 0) {
+      _balance += amount;
+      print('Successfully deposited $amount. New balance: $_balance');
+    }
+  }
+
+  bool withdraw(double amount) {
+    if (amount > 0 && _balance >= amount) {
+      _balance -= amount;
+      print('Withdrew $amount. New balance: $_balance');
+      return true;
+    }
+    print('Insufficient funds or invalid amount.');
+    return false;
+  }
 }`
       }
     },
     {
       id: 6,
-      title: "AlgoViz",
-      subtitle: "Algorithm Visualizer",
-      description: "Interactive canvas-based visualizer for sorting and pathfinding algorithms with step-by-step animation controls.",
-      longDescription: "AlgoViz makes algorithms tangible through beautiful canvas animations. Supports Bubble, Quick, Merge, Heap Sort, Shell Sort, and Dijkstra & A* pathfinding. Features speed control, step-through mode, comparison counter, and an explanation panel.",
-      tags: ["JavaScript", "HTML5 Canvas", "CSS3", "Algorithms"],
+      title: "ContactAppBlazor",
+      subtitle: "Blazor WebAssembly App",
+      description: "A lightweight contact management system built with C# and Blazor WebAssembly featuring quick search and sorting.",
+      longDescription: "ContactAppBlazor is a frontend single page application built using Microsoft Blazor WebAssembly. It provides users with a quick interface to manage a digital phonebook, complete with search filtering, contact grouping, sorting by name/company, and local storage state persistence.",
+      tags: ["C#", "Blazor WASM", "ASP.NET Core", "CSS3", "HTML5"],
       category: "frontend",
-      featured: true,
-      github: "https://github.com/joelharish/algoviz",
+      featured: false,
+      github: "https://github.com/joelharish/COntactAppBlazor",
       demo: "#",
-      stars: 89,
-      forks: 24,
-      color: "#f59e0b",
-      emoji: "🔬",
-      architecture: "100% vanilla JavaScript with HTML5 Canvas. Algorithm logic entirely decoupled from rendering via generator functions. Zero dependencies.",
+      stars: 0,
+      forks: 0,
+      color: "#ec4899",
+      emoji: "📞",
+      architecture: "Blazor WebAssembly client-side application running directly in the browser via WebAssembly, styled with custom responsive CSS grids and flexbox.",
       challenges: [
-        "Making all algorithms pausable, steppable, and speed-controllable mid-run",
-        "Rendering grid-based pathfinding at 60 FPS on large grids",
-        "Clear color-coded visual language across all algorithm types"
+        "Binding Blazor event listeners to keep search inputs synced instantaneously",
+        "Designing modern, responsive cards using pure CSS without UI frameworks like Tailwind",
+        "Managing client-side component state lifecycles efficiently"
       ],
       lessons: [
-        "Generator functions are the perfect abstraction for algorithm animation",
-        "requestAnimationFrame enables buttery-smooth 60fps canvas rendering",
-        "Pure vanilla JS can produce incredibly rich, dependency-free experiences"
+        "Blazor WASM allows full-stack developers to use C# for both frontend and backend",
+        "WebAssembly components have incredibly fast rendering speeds once loaded",
+        "Custom CSS variables make app-wide theme switching simple and fast"
       ],
       codeSnippet: {
-        lang: "javascript",
-        code: `// Merge sort as a generator — yields each animation step
-function* mergeSortGen(arr, lo = 0, hi = arr.length - 1) {
-  if (lo >= hi) return;
-  const mid = (lo + hi) >> 1;
-  yield* mergeSortGen(arr, lo, mid);
-  yield* mergeSortGen(arr, mid + 1, hi);
-  yield* mergeGen(arr, lo, mid, hi);
-}
+        lang: "csharp",
+        code: `@page "/contacts"
+@inject IContactService ContactService
 
-function* mergeGen(arr, lo, mid, hi) {
-  const L = arr.slice(lo, mid + 1);
-  const R = arr.slice(mid + 1, hi + 1);
-  let i = 0, j = 0, k = lo;
+<h3>My Contacts</h3>
 
-  while (i < L.length && j < R.length) {
-    yield { type: 'compare', indices: [lo + i, mid + 1 + j] };
-    arr[k++] = L[i] <= R[j] ? L[i++] : R[j++];
-    yield { type: 'place', index: k - 1, arr: [...arr] };
-  }
-  while (i < L.length) arr[k++] = L[i++];
-  while (j < R.length) arr[k++] = R[j++];
+<input class="search-bar" @bind-value="SearchQuery" @bind-value:event="oninput" placeholder="Search contacts..." />
+
+<div class="contacts-grid">
+    @foreach (var contact in FilteredContacts)
+    {
+        <div class="contact-card">
+            <h4>@contact.Name</h4>
+            <p>@contact.PhoneNumber</p>
+            <p class="email">@contact.Email</p>
+        </div>
+    }
+</div>
+
+@code {
+    private string SearchQuery { get; set; } = "";
+    private List<Contact> Contacts = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        Contacts = await ContactService.GetAllAsync();
+    }
+
+    private IEnumerable<Contact> FilteredContacts => Contacts
+        .Where(c => c.Name.Contains(SearchQuery, StringComparison.OrdinalIgnoreCase));
 }`
       }
     }
@@ -405,7 +386,7 @@ function* mergeGen(arr, lo, mid, hi) {
       date: "2024",
       category: "Frontend",
       skills: ["HTML5", "CSS3", "Web Design"],
-      verifyUrl: "javascript:void(0)",
+      verifyUrl: "https://coursera.org/share/ad0f68e4663f4ca1be5d1764ab6967a8",
       color: "#0866FF",
       badge: "⚛️",
       credentialId: "META-HTMLCSS"
@@ -417,7 +398,7 @@ function* mergeGen(arr, lo, mid, hi) {
       date: "2024",
       category: "Frontend",
       skills: ["JavaScript", "ES6+", "DOM Manipulation"],
-      verifyUrl: "javascript:void(0)",
+      verifyUrl: "https://coursera.org/share/b8bff5089021912fd648d1a496be43c8",
       color: "#0866FF",
       badge: "⚛️",
       credentialId: "META-JS"
@@ -429,7 +410,7 @@ function* mergeGen(arr, lo, mid, hi) {
       date: "2024",
       category: "Tools",
       skills: ["Git", "GitHub", "Version Control"],
-      verifyUrl: "javascript:void(0)",
+      verifyUrl: "https://coursera.org/share/fd760b5b43f85bf974fadeddd907526b",
       color: "#0866FF",
       badge: "⚛️",
       credentialId: "META-GIT"
@@ -441,7 +422,7 @@ function* mergeGen(arr, lo, mid, hi) {
       date: "2024",
       category: "Frontend",
       skills: ["React", "Components", "State"],
-      verifyUrl: "javascript:void(0)",
+      verifyUrl: "https://coursera.org/share/dfe5651c8bea5240e502c9532145f950",
       color: "#0866FF",
       badge: "⚛️",
       credentialId: "META-REACT"
@@ -453,7 +434,7 @@ function* mergeGen(arr, lo, mid, hi) {
       date: "2024",
       category: "Frontend",
       skills: ["Web Development", "Frontend"],
-      verifyUrl: "javascript:void(0)",
+      verifyUrl: "https://coursera.org/share/413ddb26ce8565335594beee3afc3ba3",
       color: "#0866FF",
       badge: "⚛️",
       credentialId: "META-INTRO"
@@ -465,7 +446,7 @@ function* mergeGen(arr, lo, mid, hi) {
       date: "2024",
       category: "Backend",
       skills: ["Python", "Programming Basics"],
-      verifyUrl: "javascript:void(0)",
+      verifyUrl: "https://www.guvi.in/share-certificate/05R78913EXrm8v5b6k",
       color: "#10B981",
       badge: "🐍",
       credentialId: "GUVI-PY"
@@ -477,7 +458,7 @@ function* mergeGen(arr, lo, mid, hi) {
       date: "2024",
       category: "Frontend",
       skills: ["HTML", "CSS", "UI/UX"],
-      verifyUrl: "javascript:void(0)",
+      verifyUrl: "https://open.uom.lk/lms/mod/customcert/my_certificates.php?userid=97145&certificateid=2&downloadcert=1",
       color: "#8B5CF6",
       badge: "🎓",
       credentialId: "UOM-WEB"
@@ -489,7 +470,7 @@ function* mergeGen(arr, lo, mid, hi) {
       date: "2024",
       category: "Backend",
       skills: ["Python", "Fundamentals"],
-      verifyUrl: "javascript:void(0)",
+      verifyUrl: "https://open.uom.lk/lms/mod/customcert/my_certificates.php?userid=97145&certificateid=1&downloadcert=1",
       color: "#8B5CF6",
       badge: "🎓",
       credentialId: "UOM-PY"
@@ -501,7 +482,7 @@ function* mergeGen(arr, lo, mid, hi) {
       date: "2024",
       category: "Frontend",
       skills: ["Angular", "TypeScript"],
-      verifyUrl: "javascript:void(0)",
+      verifyUrl: "https://open.uom.lk/lms/mod/customcert/my_certificates.php?userid=97145&certificateid=4&downloadcert=1",
       color: "#8B5CF6",
       badge: "🎓",
       credentialId: "UOM-ANGULAR"
@@ -512,68 +493,35 @@ function* mergeGen(arr, lo, mid, hi) {
   timeline: [
     {
       year: "2019",
-      title: "First Line of Code",
-      description: "Wrote my very first Hello World in C and was instantly hooked. Started exploring HTML and CSS to build basic web pages.",
+      title: "O/Ls",
+      description: "Completed my O/Ls with average results.",
       icon: "🌱",
       category: "Education",
-      tags: ["C", "HTML", "CSS"]
-    },
-    {
-      year: "2020",
-      title: "Built My First Website",
-      description: "Created a fully interactive school project website from scratch. Discovered JavaScript and the magic of making things move on screen.",
-      icon: "🌐",
-      category: "Project",
-      tags: ["HTML", "CSS", "JavaScript"]
-    },
-    {
-      year: "2021",
-      title: "Started CS Degree",
-      description: "Enrolled in a Computer Science program. Deep-dived into Data Structures, Algorithms, OOP with Java, and Operating Systems.",
-      icon: "🎓",
-      category: "Education",
-      tags: ["Java", "DSA", "OOP", "C", "OS"]
+      tags: ["Maths", "Science", "English"]
     },
     {
       year: "2022",
-      title: "First Internship",
-      description: "Joined a tech startup as a Junior Full-Stack Developer intern. Learned professional Git workflows, code review culture, and agile sprints.",
-      icon: "💼",
-      category: "Work",
-      tags: ["React", "Node.js", "SQL", "Git", "Agile"]
-    },
-    {
-      year: "2023",
-      title: "Open Source & Certifications",
-      description: "Made my first meaningful open source contributions. Earned SQL and Java certifications. Built AlgoViz which gained 89 GitHub stars.",
-      icon: "🔓",
-      category: "Achievement",
-      tags: ["Open Source", "Python", "SQL", "Java"]
+      title: "A/Ls",
+      description: "Completed my A/Ls with good results.",
+      icon: "�",
+      category: "Education",
+      tags: ["E-Tech", "SFT", "ICT"]
     },
     {
       year: "2024",
-      title: "Full-Stack Mastery",
-      description: "Built SkyPulse, DataLens, and LinkUp. Earned Meta Front-End and Google Analytics certifications. Expanded into .NET, Angular, and Python.",
-      icon: "🚀",
-      category: "Project",
-      tags: ["Angular", ".NET", "Python", "React", "Django"]
+      title: "Started BIT Degree",
+      description: "Enrolled in a BIT Degree program. Deep-dived into Data Structures, Algorithms, OOP with Java, and Operating Systems and Software Engineering.",
+      icon: "🎓",
+      category: "Education",
+      tags: ["Java", "DSA", "OOP", "C", "OS", "Software Engineering", "Maths"]
     },
     {
       year: "2025",
-      title: "Cloud Certified",
-      description: "Earned AWS Cloud Practitioner and Azure AZ-900 certifications. Built TaskFlow and ShopSphere as production-grade applications.",
-      icon: "☁️",
-      category: "Achievement",
-      tags: ["AWS", "Azure", "C#", "SignalR", "Docker"]
-    },
-    {
-      year: "2026",
-      title: "Software Engineer",
-      description: "Currently growing as a Software Engineer — contributing to open source, mentoring juniors, and building ambitious side projects.",
-      icon: "⚡",
+      title: "First Internship",
+      description: "Joined a tech startup as a Software Engineer intern. Learned professional workflows, code review culture, and Banking development practices.",
+      icon: "💼",
       category: "Work",
-      tags: ["Leadership", "Architecture", "Mentoring"],
-      current: true
+      tags: [".NET", "C#", "SQL", "TFS", "Pawning"]
     }
   ],
 
@@ -581,7 +529,7 @@ function* mergeGen(arr, lo, mid, hi) {
   achievements: [
     { id: "explorer",      icon: "🗺️",  title: "Explorer",       desc: "Visited 5 different sections",         secret: false },
     { id: "code_reader",   icon: "📖",  title: "Code Reader",    desc: "Opened the VS Code Explorer",          secret: false },
-    { id: "cert_hunter",   icon: "🏅",  title: "Cert Hunter",    desc: "Browsed the Certificates Vault",       secret: false },
+    { id: "cert_hunter",   icon: "🏅",  title: "Certificate Hunter",    desc: "Browsed the Certificates Vault",       secret: false },
     { id: "github_stalker",icon: "🐙",  title: "GitHub Stalker", desc: "Checked out the GitHub Stats",         secret: false },
     { id: "time_traveler", icon: "⏱️",  title: "Time Traveler",  desc: "Explored the Learning Journey",        secret: false },
     { id: "recruiter",     icon: "💼",  title: "Recruiter Mode", desc: "Activated Recruiter Mode",             secret: false },
@@ -730,9 +678,7 @@ export default App;`
   <meta property="og:image"       content="/og-image.png" />
   <meta property="og:type"        content="website" />
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card"  content="summary_large_image" />
-  <meta name="twitter:title" content="Joel Harish | Software Engineer" />
+
 
   <!-- PWA -->
   <link rel="manifest"   href="/manifest.json" />
