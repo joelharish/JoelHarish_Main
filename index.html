@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Joel Harish — Software Engineer & Open Source Contributor. Building elegant solutions to complex problems. Explore projects, certificates, GitHub stats, and more." />
-  <meta name="keywords" content="Joel Harish, Software Engineer, Full-Stack Developer, React, .NET, Java, Python , Portfolio" />
+  <meta name="description"
+    content="Joel Harish — Software Engineer & Open Source Contributor. Building elegant solutions to complex problems. Explore projects, certificates, GitHub stats, and more." />
+  <meta name="keywords"
+    content="Joel Harish, Software Engineer, Full-Stack Developer, React, .NET, Java, Python , Portfolio" />
   <meta name="author" content="Joel Harish" />
   <meta name="theme-color" content="#3b82f6" />
 
   <!-- Open Graph -->
-  <meta property="og:title"       content="Joel Harish | Software Engineer" />
+  <meta property="og:title" content="Joel Harish | Software Engineer" />
   <meta property="og:description" content="Building elegant solutions to complex problems." />
-  <meta property="og:type"        content="website" />
-  <meta property="og:url"         content="https://joelharish.netlify.app" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://joelharish.netlify.app" />
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card"        content="summary_large_image" />
-  <meta name="twitter:title"       content="Joel Harish | Software Engineer" />
-  <meta name="twitter:description" content="Building elegant solutions to complex problems." />
+
 
   <!-- PWA -->
   <link rel="manifest" href="manifest.json" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
 
   <!-- JSON-LD -->
   <script type="application/ld+json">
@@ -33,7 +34,7 @@
     "url": "https://joelharish.netlify.app",
     "sameAs": [
       "https://github.com/joelharish",
-      "https://linkedin.com/in/joelharish"
+      "https://www.linkedin.com/in/joel-harish"
     ],
     "knowsAbout": ["JavaScript","React","Angular","C#",".NET","Java","Python","PHP","SQL"]
   }
@@ -47,15 +48,22 @@
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
 
   <!-- Devicons CDN -->
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" /></noscript>
-  
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+  </noscript>
+
   <!-- Font Awesome -->
-  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" /></noscript>
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  </noscript>
   <!-- Portfolio CSS -->
   <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body class="">
 
   <!-- ── CUSTOM CURSOR ────────────────────────────── -->
@@ -72,7 +80,8 @@
     <div class="palette-box">
       <div class="palette-search-row">
         <span class="palette-search-icon">⌕</span>
-        <input id="palette-input" type="text" placeholder="Search sections, projects, commands…" autocomplete="off" spellcheck="false" />
+        <input id="palette-input" type="text" placeholder="Search sections, projects, commands…" autocomplete="off"
+          spellcheck="false" />
         <kbd class="palette-kbd">ESC</kbd>
       </div>
       <div class="palette-results" id="palette-results" role="listbox"></div>
@@ -154,7 +163,8 @@
       <ul class="nav-links" role="list">
         <li><button class="nav-link" onclick="scrollToSection('about')">About</button></li>
         <li><button class="nav-link" onclick="scrollToSection('tech-stack')">Skills</button></li>
-        <li style="display: none;"><button class="nav-link" onclick="scrollToSection('vscode-explorer')">VS Code</button></li>
+        <li style="display: none;"><button class="nav-link" onclick="scrollToSection('vscode-explorer')">VS
+            Code</button></li>
         <li><button class="nav-link" onclick="scrollToSection('projects')">Projects</button></li>
         <li><button class="nav-link" onclick="scrollToSection('certificates')">Certificates</button></li>
         <li><button class="nav-link" onclick="scrollToSection('github-stats')">GitHub</button></li>
@@ -177,10 +187,13 @@
     <div class="nav-mobile-menu" id="mobile-menu" role="menu">
       <button class="nav-link" role="menuitem" onclick="scrollToSection('about');closeMobileMenu()">About</button>
       <button class="nav-link" role="menuitem" onclick="scrollToSection('tech-stack');closeMobileMenu()">Skills</button>
-      <button class="nav-link" role="menuitem" onclick="scrollToSection('vscode-explorer');closeMobileMenu()" style="display: none;">VS Code Explorer</button>
+      <button class="nav-link" role="menuitem" onclick="scrollToSection('vscode-explorer');closeMobileMenu()"
+        style="display: none;">VS Code Explorer</button>
       <button class="nav-link" role="menuitem" onclick="scrollToSection('projects');closeMobileMenu()">Projects</button>
-      <button class="nav-link" role="menuitem" onclick="scrollToSection('certificates');closeMobileMenu()">Certificates</button>
-      <button class="nav-link" role="menuitem" onclick="scrollToSection('github-stats');closeMobileMenu()">GitHub Stats</button>
+      <button class="nav-link" role="menuitem"
+        onclick="scrollToSection('certificates');closeMobileMenu()">Certificates</button>
+      <button class="nav-link" role="menuitem" onclick="scrollToSection('github-stats');closeMobileMenu()">GitHub
+        Stats</button>
 
       <button class="nav-link" role="menuitem" onclick="scrollToSection('timeline');closeMobileMenu()">Journey</button>
       <button class="nav-link" role="menuitem" onclick="scrollToSection('contact');closeMobileMenu()">Contact</button>
@@ -190,569 +203,529 @@
   <!-- ═══════════════════════════════════════════════
        MAIN CONTENT
   ═══════════════════════════════════════════════ -->
-  <main id="main-content">
+  <!-- <main id="main-content"> -->
 
-    <!-- ── 1. HERO ─────────────────────────────── -->
-    <section id="hero" aria-label="Introduction">
-      <canvas id="particle-canvas" aria-hidden="true"></canvas>
-      <div class="hero-glow" aria-hidden="true"></div>
-      <div class="hero-content">
-        <div class="hero-eyebrow">
-          <span class="about-status-dot" aria-hidden="true"></span>
-          Available for opportunities
-        </div>
-        <h1 class="hero-name" id="hero-name">Joel Harish</h1>
-        <div class="hero-role-wrapper" aria-label="Role">
-          <span>&lt;</span>
-          <span id="typewriter-text" aria-live="polite"></span>
-          <span id="typewriter-cursor" aria-hidden="true"></span>
-          <span>/&gt;</span>
-        </div>
-        <p class="hero-desc">
-          Building elegant solutions to complex problems.
-          Passionate about clean code, and creating
-          experiences that make a real difference.
-        </p>
-        <div class="hero-cta">
-          <button class="btn btn-primary" onclick="scrollToSection('projects')" id="hero-view-projects">
-            <i class="fas fa-rocket"></i> View Projects
-          </button>
-          <a class="btn btn-ghost" href="javascript:void(0)" id="hero-download-resume" download>
-            <i class="fas fa-download"></i> Download Resume
-          </a>
-          <button class="btn btn-ghost" onclick="scrollToSection('contact')" id="hero-hire-me">
-            <i class="fas fa-paper-plane"></i> Hire Me
-          </button>
-        </div>
-        <div class="hero-socials" aria-label="Social links">
-          <a href="https://github.com/joelharish" target="_blank" rel="noopener" class="hero-social-link" aria-label="GitHub">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://linkedin.com/in/joelharish" target="_blank" rel="noopener" class="hero-social-link" aria-label="LinkedIn">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="mailto:joelharish325@gmail.com" class="hero-social-link" aria-label="Email">
-            <i class="fas fa-envelope"></i>
-          </a>
-        </div>
+  <!-- ── 1. HERO ─────────────────────────────── -->
+  <section id="hero" aria-label="Introduction">
+    <canvas id="particle-canvas" aria-hidden="true"></canvas>
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="hero-content">
+      <h1 class="hero-name" id="hero-name">Joel Harish</h1>
+      <div class="hero-eyebrow">
+        <span class="about-status-dot" aria-hidden="true"></span>
+        Available for opportunities
       </div>
+      <div class="hero-role-wrapper" aria-label="Role">
+        <span>&lt;</span>
+        <span id="typewriter-text" aria-live="polite"></span>
+        <span id="typewriter-cursor" aria-hidden="true"></span>
+        <span>/&gt;</span>
+      </div>
+      <p class="hero-desc">
+        Building elegant solutions to complex problems.
+        Passionate about clean code, and creating
+        experiences that make a real difference.
+      </p>
+      <div class="hero-cta">
+        <button class="btn btn-primary" onclick="scrollToSection('projects')" id="hero-view-projects">
+          <i class="fas fa-rocket"></i> View Projects
+        </button>
+        <a class="btn btn-ghost" href="./Doc/My_Resume_Joel_Harish (1).pdf" id="hero-download-resume" download>
+          <i class="fas fa-download"></i> Download Resume
+        </a>
+        <button class="btn btn-ghost" onclick="scrollToSection('contact')" id="hero-hire-me">
+          <i class="fas fa-paper-plane"></i> Hire Me
+        </button>
+      </div>
+      <div class="hero-socials" aria-label="Social links">
+        <a href="https://github.com/joelharish" target="_blank" rel="noopener" class="hero-social-link"
+          aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/joel-harish/" target="_blank" rel="noopener" class="hero-social-link"
+          aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:joelharish325@gmail.com" class="hero-social-link" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
 
-    </section>
+  </section>
 
-    <!-- ── 2. ABOUT ────────────────────────────── -->
-    <section id="about" aria-labelledby="about-heading">
-      <div class="container">
-        <div class="about-grid">
-          <!-- Avatar -->
-          <div class="about-avatar-wrap reveal-left">
-            <div class="about-avatar-ring" aria-hidden="true"></div>
-            <div class="about-avatar" id="about-avatar">
-              <span>👨‍💻</span>
-              <div class="about-avatar-badge">
-                <span class="about-status-dot"></span>Open to Work
-              </div>
+  <!-- ── 2. ABOUT ────────────────────────────── -->
+  <section id="about" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Avatar -->
+        <div class="about-avatar-wrap reveal-left">
+          <div class="about-avatar-ring" aria-hidden="true"></div>
+          <div class="about-avatar" id="about-avatar">
+            <img src="img/profile.jpg" alt="Joel Harish" />
+            <div class="about-avatar-badge">
+              <span class="about-status-dot"></span>Open to Work
             </div>
           </div>
-          <!-- Text -->
-          <div class="about-text reveal-right">
-            <div class="section-tag">✦ About Me</div>
-            <h2 id="about-heading">Passionate <span class="text-gradient">Software Engineer</span></h2>
-            <p id="about-bio1">
-              I'm a passionate Software Engineer who loves crafting clean, efficient code
-              and building products that make a real difference. With expertise spanning
-              frontend and backend technologies, I thrive at the intersection of
-              creativity and logic.
-            </p>
-            <p id="about-bio2">
-              I believe great software is built by curious minds who never stop learning.
-            </p>
-            <!-- Chips -->
-            <div class="about-chips stagger-children" id="about-chips" aria-label="Personal traits"></div>
-            <!-- Stats -->
-            <div class="about-stats stagger-children" id="about-stats" aria-label="Quick stats"></div>
-            <!-- CTA -->
-            <div style="margin-top:28px;display:flex;gap:12px;flex-wrap:wrap;">
-              <a class="btn btn-primary btn-sm" href="javascript:void(0)" id="about-resume-btn" download>
-                <i class="fas fa-file-pdf"></i> Download Resume
-              </a>
-              <button class="btn btn-ghost btn-sm" onclick="scrollToSection('contact')">
-                <i class="fas fa-envelope"></i> Get in Touch
+        </div>
+        <!-- Text -->
+        <div class="about-text reveal-right">
+          <div class="section-tag">✦ About Me</div>
+          <h2 id="about-heading">Passionate <span class="text-gradient">Software Engineer</span></h2>
+          <p id="about-bio1">
+            I'm a passionate Software Engineer who loves crafting clean, efficient code
+            and building products that make a real difference. With expertise spanning
+            frontend and backend technologies, I thrive at the intersection of
+            creativity and logic.
+          </p>
+          <p id="about-bio2">
+            I believe great software is built by curious minds who never stop learning.
+          </p>
+          <!-- Chips -->
+          <div class="about-chips stagger-children" id="about-chips" aria-label="Personal traits"></div>
+          <!-- Stats -->
+          <div class="about-stats stagger-children" id="about-stats" aria-label="Quick stats"></div>
+          <!-- CTA -->
+          <div style="margin-top:28px;display:flex;gap:12px;flex-wrap:wrap;">
+            <a class="btn btn-primary btn-sm" href="./Doc/My_Resume_Joel_Harish (1).pdf" id="about-resume-btn" download>
+              <i class="fas fa-file-pdf"></i> Download Resume
+            </a>
+            <button class="btn btn-ghost btn-sm" onclick="scrollToSection('contact')">
+              <i class="fas fa-envelope"></i> Get in Touch
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 3. TECH STACK ───────────────────────── -->
+  <section id="tech-stack" aria-labelledby="tech-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">⚡ Expertise</div>
+        <h2 id="tech-heading">Tech <span class="text-gradient">Stack</span></h2>
+        <p>A versatile skill set spanning frontend, backend, databases, and tooling.</p>
+      </div>
+      <!-- Tabs -->
+      <div class="tech-tabs" id="tech-tabs" role="tablist" aria-label="Tech stack categories"></div>
+      <!-- Grid -->
+      <div class="tech-grid stagger-children" id="tech-grid" role="tabpanel"></div>
+    </div>
+  </section>
+
+  <!-- ── 4. VS CODE EXPLORER (HIDDEN FOR NOW) ─────────────────── -->
+  <section id="vscode-explorer" aria-labelledby="vscode-heading" style="display: none;">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">🖥️ IDE Mode</div>
+        <h2 id="vscode-heading"><span class="text-gradient">VS Code</span> Explorer</h2>
+        <p>Browse my code like you're in a real IDE. Click files to explore snippets.</p>
+      </div>
+      <!-- VS Code Window -->
+      <div class="vscode-window reveal" id="vscode-window" role="application" aria-label="VS Code file explorer">
+        <!-- Title bar -->
+        <div class="vscode-titlebar">
+          <div class="vscode-dots" aria-hidden="true">
+            <div class="vscode-dot red"></div>
+            <div class="vscode-dot yellow"></div>
+            <div class="vscode-dot green"></div>
+          </div>
+          <div class="vscode-title">joel-harish-portfolio — VS Code</div>
+        </div>
+        <!-- Body -->
+        <div class="vscode-body">
+          <!-- Sidebar -->
+          <div class="vscode-sidebar" id="vscode-sidebar" role="tree" aria-label="File tree">
+            <div class="vscode-sidebar-title">Explorer</div>
+            <div id="vscode-tree"></div>
+          </div>
+          <!-- Editor -->
+          <div class="vscode-editor">
+            <!-- Tabs -->
+            <div class="vscode-tabs" id="vscode-tabs" role="tablist"></div>
+            <!-- Code area -->
+            <div class="vscode-code-area" id="vscode-code-area">
+              <pre id="vscode-code-pre"></pre>
+            </div>
+            <!-- Status bar -->
+            <div class="vscode-statusbar" aria-hidden="true">
+              <span>⎇ main</span>
+              <span id="vscode-status-lang">JavaScript</span>
+              <span>UTF-8</span>
+              <span>LF</span>
+              <span style="margin-left:auto;">Joel Harish Portfolio</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 5. PROJECTS ─────────────────────────── -->
+  <section id="projects" aria-labelledby="projects-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">🚀 Work</div>
+        <h2 id="projects-heading">Featured <span class="text-gradient">Projects</span></h2>
+        <p>A selection of projects that showcase my technical range and problem-solving approach.</p>
+      </div>
+      <!-- Filters -->
+      <div class="project-filters" id="project-filters" role="group" aria-label="Project filters">
+        <button class="filter-btn active" data-filter="all" onclick="filterProjects('all',this)">All Projects</button>
+        <button class="filter-btn" data-filter="fullstack"
+          onclick="filterProjects('fullstack',this)">Full-Stack</button>
+        <button class="filter-btn" data-filter="frontend" onclick="filterProjects('frontend',this)">Frontend</button>
+        <button class="filter-btn" data-filter="backend" onclick="filterProjects('backend',this)">Backend</button>
+      </div>
+      <!-- Grid -->
+      <div class="projects-grid stagger-children" id="projects-grid" role="list" aria-label="Projects"></div>
+    </div>
+  </section>
+
+  <!-- ── 6. CERTIFICATES ─────────────────────── -->
+  <section id="certificates" aria-labelledby="cert-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">🏆 Credentials</div>
+        <h2 id="cert-heading">Certificates <span class="text-gradient">Vault</span></h2>
+        <p>Industry-recognised certifications showcasing continuous learning and expertise.</p>
+      </div>
+      <!-- Controls -->
+      <div class="cert-controls reveal">
+        <div class="cert-search-wrap">
+          <span class="cert-search-icon" aria-hidden="true">🔍</span>
+          <input type="search" class="cert-search" id="cert-search" placeholder="Search certificates or skills…"
+            aria-label="Search certificates" />
+        </div>
+        <select class="cert-filter-select" id="cert-filter" aria-label="Filter by category">
+          <option value="all">All Categories</option>
+          <option value="Cloud">Cloud</option>
+          <option value="Frontend">Frontend</option>
+          <option value="Backend">Backend</option>
+          <option value="Database">Database</option>
+          <option value="Data">Data</option>
+        </select>
+      </div>
+      <!-- Grid -->
+      <div class="cert-grid stagger-children" id="cert-grid" role="list" aria-label="Certificates"></div>
+    </div>
+  </section>
+
+  <!-- ── 7. LIVE CODE SHOWCASE (HIDDEN FOR NOW) ───────────────── -->
+  <section id="live-code" aria-labelledby="code-heading" style="display: none;">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">💻 Code</div>
+        <h2 id="code-heading">Live Code <span class="text-gradient">Showcase</span></h2>
+        <p>Handpicked code snippets demonstrating clean architecture and best practices.</p>
+      </div>
+      <div class="code-showcase-layout reveal" id="code-showcase-layout">
+        <!-- Sidebar: snippet list -->
+        <div class="code-sidebar" id="code-sidebar">
+          <div class="code-sidebar-title">Snippets</div>
+          <div id="code-snippet-list"></div>
+        </div>
+        <!-- Main: code viewer -->
+        <div class="code-main">
+          <div class="code-main-header">
+            <span class="code-main-title" id="code-main-title">Select a snippet</span>
+            <span class="code-lang-badge" id="code-lang-badge">js</span>
+          </div>
+          <div class="code-content">
+            <pre id="code-display"></pre>
+          </div>
+          <div class="code-desc" id="code-desc">← Select a snippet from the sidebar</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 8. GITHUB STATS ─────────────────────── -->
+  <section id="github-stats" aria-labelledby="github-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">🐙 GitHub</div>
+        <h2 id="github-heading">GitHub <span class="text-gradient">Stats</span></h2>
+        <p>Real-time data fetched directly from the GitHub API.</p>
+      </div>
+      <!-- Profile card -->
+      <div class="github-profile-card reveal shimmer" id="github-profile-card">
+        <div class="github-avatar-wrap" id="gh-avatar">🐙</div>
+        <div class="github-profile-info">
+          <div class="github-name" id="gh-name">joelharish</div>
+          <div class="github-bio" id="gh-bio">Loading GitHub profile…</div>
+          <div class="github-profile-stats" id="gh-stats"></div>
+        </div>
+        <a href="https://github.com/joelharish" target="_blank" rel="noopener"
+          class="btn btn-ghost btn-sm github-profile-link" id="gh-profile-link">
+          <i class="fab fa-github"></i> View Profile
+        </a>
+      </div>
+      <!-- Repos grid -->
+      <div class="section-header" style="text-align:left;margin-bottom:24px;">
+        <h3 style="font-size:1.1rem;font-weight:700;">⭐ Top Repositories</h3>
+      </div>
+      <div class="github-repos-grid stagger-children" id="github-repos"></div>
+      <!-- Contribution heatmap -->
+      <div class="github-contrib-section reveal" style="margin-top:48px;">
+        <div
+          style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:12px;">
+          <h3 style="font-size:1.1rem;font-weight:700;">📅 Contribution Activity</h3>
+          <div style="display:flex;align-items:center;gap:8px;font-size:0.78rem;color:var(--text-muted);">
+            <span>Less</span>
+            <div style="width:12px;height:12px;border-radius:3px;background:var(--bg-500);"></div>
+            <div class="contrib-day l1" style="width:12px;height:12px;border-radius:3px;"></div>
+            <div class="contrib-day l2" style="width:12px;height:12px;border-radius:3px;"></div>
+            <div class="contrib-day l3" style="width:12px;height:12px;border-radius:3px;"></div>
+            <div class="contrib-day l4" style="width:12px;height:12px;border-radius:3px;"></div>
+            <span>More</span>
+          </div>
+        </div>
+        <div class="contrib-grid" id="contrib-grid" aria-label="Contribution heatmap"></div>
+      </div>
+      <!-- Language chart -->
+      <div class="github-lang-chart reveal" style="margin-top:32px;" id="lang-chart-section">
+        <h3 style="font-size:1rem;font-weight:700;margin-bottom:16px;">🌐 Language Breakdown</h3>
+        <div class="lang-bar" id="lang-bar"></div>
+        <div class="lang-legend" id="lang-legend"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 9. RECRUITER MODE ───────────────────── -->
+  <section id="recruiter-mode" aria-labelledby="recruiter-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">💼 Resume</div>
+        <h2 id="recruiter-heading">Recruiter <span class="text-gradient">Mode</span></h2>
+        <p>Toggle for a clean, print-ready resume view of Joel's experience.</p>
+      </div>
+      <!-- Toggle -->
+      <div class="recruiter-toggle-wrap reveal">
+        <button class="recruiter-toggle" id="recruiter-toggle" aria-pressed="false" aria-label="Toggle recruiter mode">
+          <div class="recruiter-toggle-track" id="recruiter-track">
+            <div class="recruiter-toggle-thumb"></div>
+          </div>
+          <span class="recruiter-label">Activate Recruiter Mode</span>
+        </button>
+      </div>
+      <!-- Resume Card -->
+      <div class="recruiter-resume" id="recruiter-resume">
+        <div class="resume-card glass-card no-hover">
+          <!-- Header -->
+          <div class="resume-header">
+            <div>
+              <div class="resume-name">Joel Harish</div>
+              <div class="resume-role">Software Engineer</div>
+              <div class="resume-contact">
+                <a href="mailto:joelharish325@gmail.com"><i class="fas fa-envelope"></i> joelharish325@gmail.com</a>
+                <a href="https://github.com/joelharish" target="_blank"><i class="fab fa-github"></i>
+                  github.com/joelharish</a>
+                <a href="https://linkedin.com/in/joelharish" target="_blank"><i class="fab fa-linkedin-in"></i>
+                  linkedin.com/in/joelharish</a>
+                <a href="javascript:void(0)"><i class="fas fa-map-marker-alt"></i> Sri Lanka</a>
+              </div>
+            </div>
+            <div class="resume-print-btn" style="margin:0;">
+              <button class="btn btn-primary btn-sm" onclick="window.print()" id="resume-print-btn">
+                <i class="fas fa-print"></i> Print / PDF
               </button>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── 3. TECH STACK ───────────────────────── -->
-    <section id="tech-stack" aria-labelledby="tech-heading">
-      <div class="container">
-        <div class="section-header reveal">
-          <div class="section-tag">⚡ Expertise</div>
-          <h2 id="tech-heading">Tech <span class="text-gradient">Stack</span></h2>
-          <p>A versatile skill set spanning frontend, backend, databases, and tooling.</p>
-        </div>
-        <!-- Tabs -->
-        <div class="tech-tabs" id="tech-tabs" role="tablist" aria-label="Tech stack categories"></div>
-        <!-- Grid -->
-        <div class="tech-grid stagger-children" id="tech-grid" role="tabpanel"></div>
-      </div>
-    </section>
-
-    <!-- ── 4. VS CODE EXPLORER (HIDDEN FOR NOW) ─────────────────── -->
-    <section id="vscode-explorer" aria-labelledby="vscode-heading" style="display: none;">
-      <div class="container">
-        <div class="section-header reveal">
-          <div class="section-tag">🖥️ IDE Mode</div>
-          <h2 id="vscode-heading"><span class="text-gradient">VS Code</span> Explorer</h2>
-          <p>Browse my code like you're in a real IDE. Click files to explore snippets.</p>
-        </div>
-        <!-- VS Code Window -->
-        <div class="vscode-window reveal" id="vscode-window" role="application" aria-label="VS Code file explorer">
-          <!-- Title bar -->
-          <div class="vscode-titlebar">
-            <div class="vscode-dots" aria-hidden="true">
-              <div class="vscode-dot red"></div>
-              <div class="vscode-dot yellow"></div>
-              <div class="vscode-dot green"></div>
-            </div>
-            <div class="vscode-title">joel-harish-portfolio — VS Code</div>
+          <!-- Summary -->
+          <div class="resume-section">
+            <div class="resume-section-title">Professional Summary</div>
+            <p style="color:var(--text-secondary);line-height:1.75;font-size:0.9rem;">
+              Motivated Software Engineer with 6+ months of experience building scalable full-stack applications.
+              Proficient in JavaScript (React, Angular), .NET (C#), Java, Python, PHP, C and SQL-based databases.
+              Proven track record of delivering high-quality software on schedule.
+            </p>
           </div>
-          <!-- Body -->
-          <div class="vscode-body">
-            <!-- Sidebar -->
-            <div class="vscode-sidebar" id="vscode-sidebar" role="tree" aria-label="File tree">
-              <div class="vscode-sidebar-title">Explorer</div>
-              <div id="vscode-tree"></div>
-            </div>
-            <!-- Editor -->
-            <div class="vscode-editor">
-              <!-- Tabs -->
-              <div class="vscode-tabs" id="vscode-tabs" role="tablist"></div>
-              <!-- Code area -->
-              <div class="vscode-code-area" id="vscode-code-area">
-                <pre id="vscode-code-pre"></pre>
-              </div>
-              <!-- Status bar -->
-              <div class="vscode-statusbar" aria-hidden="true">
-                <span>⎇ main</span>
-                <span id="vscode-status-lang">JavaScript</span>
-                <span>UTF-8</span>
-                <span>LF</span>
-                <span style="margin-left:auto;">Joel Harish Portfolio</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── 5. PROJECTS ─────────────────────────── -->
-    <section id="projects" aria-labelledby="projects-heading">
-      <div class="container">
-        <div class="section-header reveal">
-          <div class="section-tag">🚀 Work</div>
-          <h2 id="projects-heading">Featured <span class="text-gradient">Projects</span></h2>
-          <p>A selection of projects that showcase my technical range and problem-solving approach.</p>
-        </div>
-        <!-- Filters -->
-        <div class="project-filters" id="project-filters" role="group" aria-label="Project filters">
-          <button class="filter-btn active" data-filter="all" onclick="filterProjects('all',this)">All Projects</button>
-          <button class="filter-btn" data-filter="fullstack" onclick="filterProjects('fullstack',this)">Full-Stack</button>
-          <button class="filter-btn" data-filter="frontend"  onclick="filterProjects('frontend',this)">Frontend</button>
-          <button class="filter-btn" data-filter="backend"   onclick="filterProjects('backend',this)">Backend</button>
-        </div>
-        <!-- Grid -->
-        <div class="projects-grid stagger-children" id="projects-grid" role="list" aria-label="Projects"></div>
-      </div>
-    </section>
-
-    <!-- ── 6. CERTIFICATES ─────────────────────── -->
-    <section id="certificates" aria-labelledby="cert-heading">
-      <div class="container">
-        <div class="section-header reveal">
-          <div class="section-tag">🏆 Credentials</div>
-          <h2 id="cert-heading">Certificates <span class="text-gradient">Vault</span></h2>
-          <p>Industry-recognised certifications showcasing continuous learning and expertise.</p>
-        </div>
-        <!-- Controls -->
-        <div class="cert-controls reveal">
-          <div class="cert-search-wrap">
-            <span class="cert-search-icon" aria-hidden="true">🔍</span>
-            <input
-              type="search"
-              class="cert-search"
-              id="cert-search"
-              placeholder="Search certificates or skills…"
-              aria-label="Search certificates"
-            />
-          </div>
-          <select class="cert-filter-select" id="cert-filter" aria-label="Filter by category">
-            <option value="all">All Categories</option>
-            <option value="Cloud">Cloud</option>
-            <option value="Frontend">Frontend</option>
-            <option value="Backend">Backend</option>
-            <option value="Database">Database</option>
-            <option value="Data">Data</option>
-          </select>
-        </div>
-        <!-- Grid -->
-        <div class="cert-grid stagger-children" id="cert-grid" role="list" aria-label="Certificates"></div>
-      </div>
-    </section>
-
-    <!-- ── 7. LIVE CODE SHOWCASE (HIDDEN FOR NOW) ───────────────── -->
-    <section id="live-code" aria-labelledby="code-heading" style="display: none;">
-      <div class="container">
-        <div class="section-header reveal">
-          <div class="section-tag">💻 Code</div>
-          <h2 id="code-heading">Live Code <span class="text-gradient">Showcase</span></h2>
-          <p>Handpicked code snippets demonstrating clean architecture and best practices.</p>
-        </div>
-        <div class="code-showcase-layout reveal" id="code-showcase-layout">
-          <!-- Sidebar: snippet list -->
-          <div class="code-sidebar" id="code-sidebar">
-            <div class="code-sidebar-title">Snippets</div>
-            <div id="code-snippet-list"></div>
-          </div>
-          <!-- Main: code viewer -->
-          <div class="code-main">
-            <div class="code-main-header">
-              <span class="code-main-title" id="code-main-title">Select a snippet</span>
-              <span class="code-lang-badge" id="code-lang-badge">js</span>
-            </div>
-            <div class="code-content">
-              <pre id="code-display"></pre>
-            </div>
-            <div class="code-desc" id="code-desc">← Select a snippet from the sidebar</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── 8. GITHUB STATS ─────────────────────── -->
-    <section id="github-stats" aria-labelledby="github-heading">
-      <div class="container">
-        <div class="section-header reveal">
-          <div class="section-tag">🐙 GitHub</div>
-          <h2 id="github-heading">GitHub <span class="text-gradient">Stats</span></h2>
-          <p>Real-time data fetched directly from the GitHub API.</p>
-        </div>
-        <!-- Profile card -->
-        <div class="github-profile-card reveal shimmer" id="github-profile-card">
-          <div class="github-avatar-wrap" id="gh-avatar">🐙</div>
-          <div class="github-profile-info">
-            <div class="github-name" id="gh-name">joelharish</div>
-            <div class="github-bio" id="gh-bio">Loading GitHub profile…</div>
-            <div class="github-profile-stats" id="gh-stats"></div>
-          </div>
-          <a href="https://github.com/joelharish" target="_blank" rel="noopener"
-             class="btn btn-ghost btn-sm github-profile-link" id="gh-profile-link">
-            <i class="fab fa-github"></i> View Profile
-          </a>
-        </div>
-        <!-- Repos grid -->
-        <div class="section-header" style="text-align:left;margin-bottom:24px;">
-          <h3 style="font-size:1.1rem;font-weight:700;">⭐ Top Repositories</h3>
-        </div>
-        <div class="github-repos-grid stagger-children" id="github-repos"></div>
-        <!-- Contribution heatmap -->
-        <div class="github-contrib-section reveal" style="margin-top:48px;">
-          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:12px;">
-            <h3 style="font-size:1.1rem;font-weight:700;">📅 Contribution Activity</h3>
-            <div style="display:flex;align-items:center;gap:8px;font-size:0.78rem;color:var(--text-muted);">
-              <span>Less</span>
-              <div style="width:12px;height:12px;border-radius:3px;background:var(--bg-500);"></div>
-              <div class="contrib-day l1" style="width:12px;height:12px;border-radius:3px;"></div>
-              <div class="contrib-day l2" style="width:12px;height:12px;border-radius:3px;"></div>
-              <div class="contrib-day l3" style="width:12px;height:12px;border-radius:3px;"></div>
-              <div class="contrib-day l4" style="width:12px;height:12px;border-radius:3px;"></div>
-              <span>More</span>
-            </div>
-          </div>
-          <div class="contrib-grid" id="contrib-grid" aria-label="Contribution heatmap"></div>
-        </div>
-        <!-- Language chart -->
-        <div class="github-lang-chart reveal" style="margin-top:32px;" id="lang-chart-section">
-          <h3 style="font-size:1rem;font-weight:700;margin-bottom:16px;">🌐 Language Breakdown</h3>
-          <div class="lang-bar" id="lang-bar"></div>
-          <div class="lang-legend" id="lang-legend"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── 9. RECRUITER MODE ───────────────────── -->
-    <section id="recruiter-mode" aria-labelledby="recruiter-heading">
-      <div class="container">
-        <div class="section-header reveal">
-          <div class="section-tag">💼 Resume</div>
-          <h2 id="recruiter-heading">Recruiter <span class="text-gradient">Mode</span></h2>
-          <p>Toggle for a clean, print-ready resume view of Joel's experience.</p>
-        </div>
-        <!-- Toggle -->
-        <div class="recruiter-toggle-wrap reveal">
-          <button class="recruiter-toggle" id="recruiter-toggle" aria-pressed="false" aria-label="Toggle recruiter mode">
-            <div class="recruiter-toggle-track" id="recruiter-track">
-              <div class="recruiter-toggle-thumb"></div>
-            </div>
-            <span class="recruiter-label">Activate Recruiter Mode</span>
-          </button>
-        </div>
-        <!-- Resume Card -->
-        <div class="recruiter-resume" id="recruiter-resume">
-          <div class="resume-card glass-card no-hover">
-            <!-- Header -->
-            <div class="resume-header">
-              <div>
-                <div class="resume-name">Joel Harish</div>
-                <div class="resume-role">Software Engineer | Open Source Contributor</div>
-                <div class="resume-contact">
-                  <a href="mailto:joelharish@example.com"><i class="fas fa-envelope"></i> joelharish@example.com</a>
-                  <a href="https://github.com/joelharish" target="_blank"><i class="fab fa-github"></i> github.com/joelharish</a>
-                  <a href="https://linkedin.com/in/joelharish" target="_blank"><i class="fab fa-linkedin-in"></i> linkedin.com/in/joelharish</a>
-                  <a href="javascript:void(0)"><i class="fas fa-map-marker-alt"></i> India</a>
-                </div>
-              </div>
-              <div class="resume-print-btn" style="margin:0;">
-                <button class="btn btn-primary btn-sm" onclick="window.print()" id="resume-print-btn">
-                  <i class="fas fa-print"></i> Print / PDF
-                </button>
-              </div>
-            </div>
-            <!-- Summary -->
-            <div class="resume-section">
-              <div class="resume-section-title">Professional Summary</div>
-              <p style="color:var(--text-secondary);line-height:1.75;font-size:0.9rem;">
-                Motivated Software Engineer with 3+ years of experience building scalable full-stack applications.
-                Proficient in JavaScript (React, Angular), .NET (C#), Java, Python, and SQL-based databases.
-                Proven track record of delivering high-quality software on schedule. Active open source contributor
-                with 193+ GitHub stars across projects.
-              </p>
-            </div>
-            <!-- Skills -->
-            <div class="resume-section">
-              <div class="resume-section-title">Technical Skills</div>
-              <div class="resume-skills-grid">
-                <div class="resume-skill">HTML5 / CSS3</div>
-                <div class="resume-skill">JavaScript ES6+</div>
-                <div class="resume-skill">React</div>
-                <div class="resume-skill">Angular</div>
-                <div class="resume-skill">C# / .NET 8</div>
-                <div class="resume-skill">Java</div>
-                <div class="resume-skill">Python</div>
-                <div class="resume-skill">PHP</div>
-                <div class="resume-skill">SQL Server</div>
-                <div class="resume-skill">MySQL</div>
-                <div class="resume-skill">PostgreSQL</div>
-                <div class="resume-skill">MongoDB</div>
-                <div class="resume-skill">Git / GitHub</div>
-                <div class="resume-skill">Docker (basic)</div>
+          <!-- Skills -->
+          <div class="resume-section">
+            <div class="resume-section-title">Technical Skills</div>
+            <div class="resume-skills-grid">
+              <div class="resume-skill">HTML5 / CSS3</div>
+              <div class="resume-skill">JavaScript ES6+</div>
+              <div class="resume-skill">React</div>
+              <div class="resume-skill">Angular</div>
+              <div class="resume-skill">C# / .NET 8</div>
+              <div class="resume-skill">Java</div>
+              <div class="resume-skill">Python</div>
+              <div class="resume-skill">PHP</div>
+              <div class="resume-skill">SQL Server</div>
+              <div class="resume-skill">MySQL</div>
+              <!-- <div class="resume-skill">PostgreSQL</div>
+                <div class="resume-skill">MongoDB</div> -->
+              <div class="resume-skill">Git / GitHub</div>
+              <!-- <div class="resume-skill">Docker (basic)</div>
                 <div class="resume-skill">AWS (CCP)</div>
-                <div class="resume-skill">Azure (AZ-900)</div>
-              </div>
+                <div class="resume-skill">Azure (AZ-900)</div> -->
             </div>
-            <!-- Experience -->
-            <div class="resume-section">
-              <div class="resume-section-title">Experience</div>
-              <div class="resume-timeline">
-                <div>
-                  <div class="resume-item-head">
-                    <div>
-                      <div class="resume-item-title">Software Engineer</div>
-                      <div class="resume-item-sub">Tech Company • India</div>
-                    </div>
-                    <div class="resume-item-date">2024 – Present</div>
+          </div>
+          <!-- Experience -->
+          <div class="resume-section">
+            <div class="resume-section-title">Experience</div>
+            <div class="resume-timeline">
+              <div>
+                <div class="resume-item-head">
+                  <div>
+                    <div class="resume-item-title">Software Engineer Intern</div>
+                    <div class="resume-item-sub">Scienter Technologies (pvt) ltd</div>
                   </div>
-                  <div class="resume-item-desc">
-                    Building and maintaining full-stack web applications. Collaborating with cross-functional teams
-                    to deliver features. Mentoring junior developers and contributing to architectural decisions.
-                  </div>
+                  <div class="resume-item-date">2025 August – 2026 February</div>
                 </div>
-                <div>
-                  <div class="resume-item-head">
-                    <div>
-                      <div class="resume-item-title">Junior Full-Stack Developer (Intern)</div>
-                      <div class="resume-item-sub">Startup • India</div>
-                    </div>
-                    <div class="resume-item-date">2022 – 2024</div>
-                  </div>
-                  <div class="resume-item-desc">
-                    Developed React + Node.js features, improved SQL query performance by 40%,
-                    and established Git workflow standards for the team.
-                  </div>
+                <div class="resume-item-desc">
+                  Building and maintaining full-stack banking web applications. Collaborating with cross-functional
+                  teams to deliver features.
                 </div>
               </div>
+
             </div>
-            <!-- Education -->
-            <div class="resume-section">
-              <div class="resume-section-title">Education</div>
-              <div class="resume-item-head">
-                <div>
-                  <div class="resume-item-title">Bachelor of Technology — Computer Science</div>
-                  <div class="resume-item-sub">University • India</div>
-                </div>
-                <div class="resume-item-date">2021 – 2025</div>
+          </div>
+          <!-- Education -->
+          <div class="resume-section">
+            <div class="resume-section-title">Education</div>
+            <div class="resume-item-head">
+              <div>
+                <div class="resume-item-title">Bachelor of Information Technology — Degree</div>
+                <div class="resume-item-sub">University Of Colombo - Sri Lanka</div>
               </div>
+              <div class="resume-item-date">2024 – Present</div>
             </div>
-            <!-- Certifications -->
-            <div class="resume-section">
-              <div class="resume-section-title">Certifications</div>
-              <div class="resume-skills-grid">
-                <div class="resume-skill">AWS Cloud Practitioner</div>
-                <div class="resume-skill">Azure AZ-900</div>
-                <div class="resume-skill">Meta Front-End Dev</div>
-                <div class="resume-skill">Google Data Analytics</div>
-              </div>
+          </div>
+          <!-- Certifications -->
+          <div class="resume-section">
+            <div class="resume-section-title">Certifications</div>
+            <div class="resume-skills-grid">
+              <div class="resume-skill">Meta Fron-End Developer</div>
+              <div class="resume-skill">Full Stack Developer - Moratuwa University</div>
+              <div class="resume-skill">Python Developer - Guvi</div>
+              <div class="resume-skill">Mastering C# - Udemy</div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ── 10. DEVELOPER STATS (HIDDEN FOR NOW) ─────────────────── -->
-    <section id="dev-stats" aria-labelledby="devstats-heading" style="display: none;">
-      <div class="container">
-        <div class="section-header reveal">
-          <div class="section-tag">📊 Metrics</div>
-          <h2 id="devstats-heading">Developer <span class="text-gradient">Stats</span></h2>
-          <p>An at-a-glance view of coding activity and language distribution.</p>
+  <!-- ── 10. DEVELOPER STATS (HIDDEN FOR NOW) ─────────────────── -->
+  <section id="dev-stats" aria-labelledby="devstats-heading" style="display: none;">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">📊 Metrics</div>
+        <h2 id="devstats-heading">Developer <span class="text-gradient">Stats</span></h2>
+        <p>An at-a-glance view of coding activity and language distribution.</p>
+      </div>
+      <!-- Stat cards -->
+      <div class="dev-stats-grid stagger-children" id="dev-stats-grid">
+        <div class="dev-stat-card">
+          <div class="dev-stat-icon">📁</div>
+          <div class="dev-stat-value"><span class="counter" data-target="20">0</span><span
+              class="dev-stat-suffix">+</span></div>
+          <div class="dev-stat-label">Projects Completed</div>
         </div>
-        <!-- Stat cards -->
-        <div class="dev-stats-grid stagger-children" id="dev-stats-grid">
-          <div class="dev-stat-card">
-            <div class="dev-stat-icon">📁</div>
-            <div class="dev-stat-value"><span class="counter" data-target="20">0</span><span class="dev-stat-suffix">+</span></div>
-            <div class="dev-stat-label">Projects Completed</div>
-          </div>
-          <div class="dev-stat-card">
-            <div class="dev-stat-icon">⭐</div>
-            <div class="dev-stat-value"><span class="counter" data-target="193">0</span><span class="dev-stat-suffix"></span></div>
-            <div class="dev-stat-label">GitHub Stars Earned</div>
-          </div>
-          <div class="dev-stat-card">
-            <div class="dev-stat-icon">🔀</div>
-            <div class="dev-stat-value"><span class="counter" data-target="81">0</span><span class="dev-stat-suffix">+</span></div>
-            <div class="dev-stat-label">Forks</div>
-          </div>
-          <div class="dev-stat-card">
-            <div class="dev-stat-icon">🏅</div>
-            <div class="dev-stat-value"><span class="counter" data-target="8">0</span><span class="dev-stat-suffix"></span></div>
-            <div class="dev-stat-label">Certifications</div>
-          </div>
-          <div class="dev-stat-card">
-            <div class="dev-stat-icon">☕</div>
-            <div class="dev-stat-value"><span class="counter" data-target="2847">0</span><span class="dev-stat-suffix"></span></div>
-            <div class="dev-stat-label">Coffees Consumed</div>
-          </div>
-          <div class="dev-stat-card">
-            <div class="dev-stat-icon">🔓</div>
-            <div class="dev-stat-value"><span class="counter" data-target="34">0</span><span class="dev-stat-suffix">+</span></div>
-            <div class="dev-stat-label">OSS Contributions</div>
-          </div>
+        <div class="dev-stat-card">
+          <div class="dev-stat-icon">⭐</div>
+          <div class="dev-stat-value"><span class="counter" data-target="193">0</span><span
+              class="dev-stat-suffix"></span></div>
+          <div class="dev-stat-label">GitHub Stars Earned</div>
         </div>
-        <!-- Charts -->
-        <div class="dev-charts-row">
-          <div class="dev-chart-card reveal">
-            <div class="dev-chart-title">📝 Language Distribution</div>
-            <canvas id="lang-chart" height="220"></canvas>
-          </div>
-          <div class="dev-chart-card reveal">
-            <div class="dev-chart-title">📅 Weekly Coding Activity</div>
-            <canvas id="activity-chart" height="220"></canvas>
+        <div class="dev-stat-card">
+          <div class="dev-stat-icon">🔀</div>
+          <div class="dev-stat-value"><span class="counter" data-target="81">0</span><span
+              class="dev-stat-suffix">+</span></div>
+          <div class="dev-stat-label">Forks</div>
+        </div>
+        <div class="dev-stat-card">
+          <div class="dev-stat-icon">🏅</div>
+          <div class="dev-stat-value"><span class="counter" data-target="8">0</span><span
+              class="dev-stat-suffix"></span></div>
+          <div class="dev-stat-label">Certifications</div>
+        </div>
+        <div class="dev-stat-card">
+          <div class="dev-stat-icon">☕</div>
+          <div class="dev-stat-value"><span class="counter" data-target="2847">0</span><span
+              class="dev-stat-suffix"></span></div>
+          <div class="dev-stat-label">Coffees Consumed</div>
+        </div>
+        <div class="dev-stat-card">
+          <div class="dev-stat-icon">🔓</div>
+          <div class="dev-stat-value"><span class="counter" data-target="34">0</span><span
+              class="dev-stat-suffix">+</span></div>
+          <div class="dev-stat-label">OSS Contributions</div>
+        </div>
+      </div>
+      <!-- Charts -->
+      <div class="dev-charts-row">
+        <div class="dev-chart-card reveal">
+          <div class="dev-chart-title">📝 Language Distribution</div>
+          <canvas id="lang-chart" height="220"></canvas>
+        </div>
+        <div class="dev-chart-card reveal">
+          <div class="dev-chart-title">📅 Weekly Coding Activity</div>
+          <canvas id="activity-chart" height="220"></canvas>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ── 12. LEARNING JOURNEY ────────────────── -->
+  <section id="timeline" aria-labelledby="timeline-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">⏱️ History</div>
+        <h2 id="timeline-heading">Learning <span class="text-gradient">Journey</span></h2>
+        <p>The milestones that shaped me as a software engineer — from first line of code to today.</p>
+      </div>
+      <div class="timeline-track" id="timeline-track" role="list" aria-label="Learning journey timeline"></div>
+    </div>
+  </section>
+
+  <!-- ── 13. CONTACT ─────────────────────────── -->
+  <section id="contact" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">📬 Get in Touch</div>
+        <h2 id="contact-heading">Let's <span class="text-gradient">Connect</span></h2>
+        <p>Have a project in mind or want to discuss opportunities? I'd love to hear from you.</p>
+      </div>
+      <div class="contact-layout">
+        <!-- Info -->
+        <div class="contact-info-centered reveal">
+          <h3>Let's build something <span class="text-gradient">amazing</span> together</h3>
+          <p>I'm currently open to full-time roles and exciting freelance projects.
+            Whether you have a question or just want to say hi — my inbox is always open!</p>
+          <div class="contact-links">
+            <a href="mailto:joelharish325@gmail.com" class="contact-link">
+              <span class="contact-link-icon">✉️</span>
+              <div>
+                <div class="contact-link-label">Email</div>
+                <div class="contact-link-value">joelharish325@gmail.com</div>
+              </div>
+            </a>
+            <a href="https://github.com/joelharish" target="_blank" rel="noopener" class="contact-link">
+              <span class="contact-link-icon"><i class="fab fa-github"></i></span>
+              <div>
+                <div class="contact-link-label">GitHub</div>
+                <div class="contact-link-value">github.com/joelharish</div>
+              </div>
+            </a>
+            <a href="https://linkedin.com/in/joelharish" target="_blank" rel="noopener" class="contact-link">
+              <span class="contact-link-icon"><i class="fab fa-linkedin-in"></i></span>
+              <div>
+                <div class="contact-link-label">LinkedIn</div>
+                <div class="contact-link-value">linkedin.com/in/joelharish</div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
-    </section>
-
-
-
-    <!-- ── 12. LEARNING JOURNEY ────────────────── -->
-    <section id="timeline" aria-labelledby="timeline-heading">
-      <div class="container">
-        <div class="section-header reveal">
-          <div class="section-tag">⏱️ History</div>
-          <h2 id="timeline-heading">Learning <span class="text-gradient">Journey</span></h2>
-          <p>The milestones that shaped me as a software engineer — from first line of code to today.</p>
-        </div>
-        <div class="timeline-track" id="timeline-track" role="list" aria-label="Learning journey timeline"></div>
-      </div>
-    </section>
-
-    <!-- ── 13. CONTACT ─────────────────────────── -->
-    <section id="contact" aria-labelledby="contact-heading">
-      <div class="container">
-        <div class="section-header reveal">
-          <div class="section-tag">📬 Get in Touch</div>
-          <h2 id="contact-heading">Let's <span class="text-gradient">Connect</span></h2>
-          <p>Have a project in mind or want to discuss opportunities? I'd love to hear from you.</p>
-        </div>
-        <div class="contact-layout">
-          <!-- Info -->
-          <div class="reveal-left">
-            <h3>Let's build something <span class="text-gradient">amazing</span> together</h3>
-            <p>I'm currently open to full-time roles and exciting freelance projects.
-               Whether you have a question or just want to say hi — my inbox is always open!</p>
-            <div class="contact-links">
-              <a href="mailto:joelharish@example.com" class="contact-link">
-                <span class="contact-link-icon">✉️</span>
-                <div>
-                  <div class="contact-link-label">Email</div>
-                  <div class="contact-link-value">joelharish@example.com</div>
-                </div>
-              </a>
-              <a href="https://github.com/joelharish" target="_blank" rel="noopener" class="contact-link">
-                <span class="contact-link-icon"><i class="fab fa-github"></i></span>
-                <div>
-                  <div class="contact-link-label">GitHub</div>
-                  <div class="contact-link-value">github.com/joelharish</div>
-                </div>
-              </a>
-              <a href="https://linkedin.com/in/joelharish" target="_blank" rel="noopener" class="contact-link">
-                <span class="contact-link-icon"><i class="fab fa-linkedin-in"></i></span>
-                <div>
-                  <div class="contact-link-label">LinkedIn</div>
-                  <div class="contact-link-value">linkedin.com/in/joelharish</div>
-                </div>
-              </a>
-              <a href="https://twitter.com/joelharish" target="_blank" rel="noopener" class="contact-link">
-                <span class="contact-link-icon"><i class="fab fa-twitter"></i></span>
-                <div>
-                  <div class="contact-link-label">Twitter / X</div>
-                  <div class="contact-link-value">@joelharish</div>
-                </div>
-              </a>
-            </div>
-          </div>
-          <!-- Form -->
-          <div class="contact-form-card glass-card no-hover reveal-right">
-            <form id="contact-form" novalidate aria-label="Contact form">
-              <div class="form-row">
-                <div class="form-group">
-                  <label class="form-label" for="contact-name">Your Name</label>
-                  <input type="text" id="contact-name" class="form-input" placeholder="John Doe" required autocomplete="name" />
-                </div>
-                <div class="form-group">
-                  <label class="form-label" for="contact-email">Email Address</label>
-                  <input type="email" id="contact-email" class="form-input" placeholder="john@example.com" required autocomplete="email" />
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="contact-subject">Subject</label>
-                <input type="text" id="contact-subject" class="form-input" placeholder="Project Collaboration" required />
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="contact-message">Message</label>
-                <textarea id="contact-message" class="form-textarea" placeholder="Tell me about your project…" required></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary w-full" id="contact-submit">
-                <i class="fas fa-paper-plane"></i> Send Message
-              </button>
-              <div class="form-status" id="contact-status" role="alert" aria-live="polite"></div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
+  </section>
 
   </main><!-- /#main-content -->
 
@@ -762,10 +735,12 @@
       <div class="footer-top">
         <div class="footer-logo">&lt;JH /&gt;</div>
         <div class="footer-socials" aria-label="Social links">
-          <a href="https://github.com/joelharish" target="_blank" rel="noopener" class="footer-social" aria-label="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://linkedin.com/in/joelharish" target="_blank" rel="noopener" class="footer-social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://twitter.com/joelharish" target="_blank" rel="noopener" class="footer-social" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-          <a href="mailto:joelharish@example.com" class="footer-social" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://github.com/joelharish" target="_blank" rel="noopener" class="footer-social"
+            aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/joelharish" target="_blank" rel="noopener" class="footer-social"
+            aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:joelharish325@gmail.com" class="footer-social" aria-label="Email"><i
+              class="fas fa-envelope"></i></a>
         </div>
         <button class="footer-scroll-top" onclick="scrollToSection('hero')" aria-label="Scroll to top">
           <i class="fas fa-arrow-up"></i>
@@ -773,11 +748,7 @@
       </div>
       <div class="footer-bottom">
         <span>© 2026 Joel Harish. All rights reserved.</span>
-        <span>
-          Built with <span class="footer-heart">❤️</span> using
-          pure HTML, CSS &amp; Vanilla JS
-        </span>
-        <span>India 🇮🇳</span>
+        <span>Sri Lanka</span>
       </div>
     </div>
   </footer>
@@ -799,4 +770,5 @@
   <script src="js/main.js" defer></script>
 
 </body>
+
 </html>
