@@ -522,6 +522,14 @@ const analyzeAnimalImage = async (base64Image) => {
       icon: "💼",
       category: "Work",
       tags: [".NET", "C#", "SQL", "TFS", "Pawning"]
+    },
+    {
+      year: "2026",
+      title: "Associate Web Developer",
+      description: "Join as a Associate Web Developer at a leading IT company.",
+      icon: "💼",
+      category: "Work",
+      tags: ["JS", "HTML", "CSS", "GIT", "SCSS", "Galaxy CMS"]
     }
   ],
 
